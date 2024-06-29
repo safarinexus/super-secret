@@ -24,7 +24,7 @@ $maincolor: #000;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100svh;
     font-family: 'vt323';
     font-weight: 300;
     font-size: 1.25rem;
@@ -48,15 +48,15 @@ body {
     font-size: 0.5em;
     padding: 0; 
     margin: 0;
-    height: 100vh;
+    height: 100svh;
 }
 
-.welcome {
+.reflective {
     position: relative; 
     bottom: 40%;
     font-family: 'Helvetica Neue', sans-serif; 
     font-style: italic; 
-    font-size: 10vh;
+    font-size: 10svh;
     letter-spacing: 1px;
     overflow: hidden;
     background: linear-gradient(90deg, #000, #fff, #000);
@@ -128,7 +128,7 @@ body {
    }
 
 .content {
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +144,8 @@ body {
   font-size: small;
   animation: fade-in-photo linear;
   animation-timeline: scroll(); 
-  animation-range: contain 50%;
+  animation-range-start: 0;
+  animation-range-end: contain 50%; 
 }
 
 .photous {
@@ -154,15 +155,16 @@ body {
     content: url(./assets/circlePhoto.jpg);
     animation: fade-in-photo linear;
     animation-timeline: scroll(); 
-    animation-range: contain 50%;
+    animation-range-start: 0;
+    animation-range-end: contain 50%; 
     border-radius: 50%;
     z-index: 5;
     cursor: pointer;
 }
 @keyframes fade-in-photo {
     0% {opacity: 0;}
-    80% {opacity: 0;}
-    100% {opacity: 100%;}
+    70% {opacity: 0;}
+    80% {opacity: 100%;}
 }
 
 .text_shadows {
@@ -247,3 +249,52 @@ body {
   }
 }
 
+.buffer {
+  height: 200px; 
+  display: flex; 
+  align-items: center;
+}
+
+.type-text {
+  margin-left: 20px;
+  border-right: solid 5px rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 3em;
+  color: var(--color-primary);
+  /*
+  rgba(255,255,255,.70);
+  */
+  animation: animated-cursor 600ms linear infinite;
+  animation: animated-text 2s steps(25, end) 1s 1 normal both,
+  animated-cursor 600ms linear infinite;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 772px;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.wishes {
+  min-height: 100svh;
+  width: 100%; 
+  height: auto;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  height: auto; 
+  width: 70%; 
+  border-radius: 20px;
+  border: 0.5px solid #444;
+  background-color: antiquewhite; 
+
+}

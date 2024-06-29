@@ -40,10 +40,9 @@ text.addEventListener("click", () => {
 
 photous.addEventListener("click", () => {
     confetti({
-        particleCount: 80,
-        spread: 360, 
-        origin: { x: 0.5, y: 0.6 },
-        startVelocity: 20, 
+        particleCount: 200,
+        spread: 90, 
+        origin: { x: 0.5, y: 1 },
         shapes: ["heart"],
         colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"], 
         scalar: 4,
@@ -53,11 +52,12 @@ photous.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const target = document.querySelector('.content');
+    const target2 = document.querySelector('.buffer');
   
     const observerOptions = {
       root: null, // Default is the viewport
       rootMargin: '0px',
-      threshold: 1 // Trigger 
+      threshold: 0.8 // Trigger 
     };
   
     const observerCallback = (entries, observer) => {
@@ -77,14 +77,14 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         
             confetti({
-                particleCount: 200,
+                particleCount: 80,
                 spread: 90,
                 angle: 225,
                 origin: { x: 1, y: 0 },
             });
         
             confetti({
-                particleCount: 200,
+                particleCount: 80,
                 spread: 90,
                 angle: 315,
                 origin: { x: 0, y: 0 },
@@ -92,20 +92,36 @@ document.addEventListener('DOMContentLoaded', function() {
             
             setTimeout(() => {
                 confetti({
-                    particleCount: 80,
-                    spread: 360, 
-                    origin: { x: 0.5, y: 0.6 },
-                    startVelocity: 20, 
+                    particleCount: 200,
+                    spread: 90, 
+                    origin: { x: 0.5, y: 1 },
                     shapes: ["heart"],
                     colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"], 
                     scalar: 4,
                 });
-            }, 2500)
+            }, 2000);
             observer.unobserve(target); // Stop observing if needed
         }
       });
     };
-  
+    const observerOptions2 = {
+        root: null, // Use the viewport
+        rootMargin: '-50% 0px -50% 0px', // Offset to trigger when the element is in the middle
+        threshold: 0 // Trigger when any part of the element is in view
+      };
+    
+      const observerCallback2= (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.innerHTML = '<h1 class="type-text" id="loved-ones">And from the ones that love you!</h1>';
+            observer.unobserve(target2); 
+          }
+        });
+      };
     const observer = new IntersectionObserver(observerCallback, observerOptions);
     observer.observe(target);
+    const observer2 = new IntersectionObserver(observerCallback2, observerOptions2);
+    observer2.observe(target2);
   });
+
+
