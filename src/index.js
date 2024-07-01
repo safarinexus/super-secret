@@ -9,6 +9,13 @@ if ('scrollRestoration' in history) {
 
 const text = document.querySelector('.text_shadows'); 
 const photous = document.querySelector(".photous");
+const scrollCircle = document.querySelector("#scroll-circle");
+const scrollText = document.querySelector("#scroll-text");
+
+
+scrollCircle.classList.add('anim-circle')
+scrollText.classList.add("scroll-text")
+
 
 text.addEventListener("click", () => {
     confetti({
