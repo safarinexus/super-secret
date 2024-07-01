@@ -312,15 +312,10 @@ body {
     animation: animated-text 2s steps(20, end) 1s 1 normal both,
     animated-cursor 600ms linear infinite;
   }
-  
-  @-webkit-keyframes animated-text{
-    from{width: 0;}
-    to{width: 64lvw;}
-  }
 
   @-webkit-keyframes animated-text{
     from{width: 0;}
-    to{width: 70lvw;}
+    to{width: 72lvw;}
   }
   
 }
