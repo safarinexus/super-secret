@@ -109,14 +109,14 @@ body {
     height: 20px;
     border-radius: 50%;
     background: rgba(188, 237, 243, 0.889);
-    -webkit-animation: circle-fade-out, breathe;
-    animation-timing-function: linear, auto;
-    animation-duration: 1.5s;
-    animation-iteration-count: auto, infinite;
+    -webkit-animation: 
+      circle-fade-out 1s linear, 
+      breathe 1.5s infinite;
     animation-timeline: scroll(), auto; 
     animation-range: contain;
     display: block;
 }
+
 
 @keyframes circle-fade-out {
     0% {opacity: 100%}
