@@ -308,13 +308,19 @@ body {
 
 @media only screen and (max-width: 600px) {
   .type-text {
-    font-size: 4lvw;
-    animation: animated-text 2s steps(20, end) 1s 1 normal both
+    font-size: 5lvw;
+    animation: animated-text 2s steps(20, end) 1s 1 normal both,
+    animated-cursor 600ms linear infinite;
+  }
+  
+  @-webkit-keyframes animated-text{
+    from{width: 0;}
+    to{width: 64lvw;}
   }
 
   @-webkit-keyframes animated-text{
     from{width: 0;}
-    to{width: 65lvw;}
+    to{width: 70lvw;}
   }
   
 }
