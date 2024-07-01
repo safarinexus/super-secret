@@ -269,7 +269,7 @@ body {
   border-right: solid 5px rgba(255,255,255,.75);
   white-space: nowrap;
   overflow: hidden;    
-  font-size: 6dvw;
+  font-size: 6svw;
   color: var(--color-primary);
   /*
   rgba(255,255,255,.70);
@@ -281,7 +281,7 @@ body {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 78dvw;}
+  to{width: 78svw;}
 }
 
 @keyframes animated-cursor{
