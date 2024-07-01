@@ -9,13 +9,6 @@ if ('scrollRestoration' in history) {
 
 const text = document.querySelector('.text_shadows'); 
 const photous = document.querySelector(".photous");
-const scrollCircle = document.querySelector("#scroll-circle");
-const scrollText = document.querySelector("#scroll-text");
-
-window.addEventListener('load', function () {
-    scrollCircle.classList.add('anim-circle')
-    scrollText.classList.add("scroll-text")
-  })
 
 
 

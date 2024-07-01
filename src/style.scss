@@ -100,7 +100,7 @@ body {
     margin: 0; 
 }
 
-.anim-circle {
+.scroll-circle {
     content: url('./assets/arrow-down-thin.svg');
     position: relative;
     bottom: 20px;
@@ -269,7 +269,7 @@ body {
   border-right: solid 5px rgba(255,255,255,.75);
   white-space: nowrap;
   overflow: hidden;    
-  font-size: 6svw;
+  font-size: 4svw;
   color: var(--color-primary);
   /*
   rgba(255,255,255,.70);
@@ -281,7 +281,7 @@ body {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 78svw;}
+  to{width: 52svw;}
 }
 
 @keyframes animated-cursor{
