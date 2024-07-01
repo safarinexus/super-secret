@@ -68,7 +68,7 @@ body {
     user-select: none;
 }
 
-@keyframes animate {
+@-webkit-keyframes animate {
     0% {
         background-position: -9000%;
     }
@@ -83,14 +83,14 @@ body {
     position: relative;
     bottom: 30px; 
     left: 2px;
-    -webkit-animation: text-fade-out linear;
+    animation: text-fade-out linear;
     animation-timeline: scroll(); 
     animation-range: cover;
     text-align: center;
     user-select: none;
 }
 
-@keyframes text-fade-out {
+@-webkit-keyframes text-fade-out {
   0% {opacity: 100%;}
   20% {opacity: 0;}
   100% {opacity: 0;}
@@ -109,22 +109,20 @@ body {
     height: 20px;
     border-radius: 50%;
     background: rgba(188, 237, 243, 0.889);
-    -webkit-animation: 
-      circle-fade-out 1s linear, 
-      breathe 1.5s infinite;
+    animation: circle-fade-out 1s linear, breathe 1.5s infinite;
     animation-timeline: scroll(), auto; 
     animation-range: contain;
-    display: block;
 }
 
 
-@keyframes circle-fade-out {
-    0% {opacity: 100%}
+@-webkit-keyframes circle-fade-out {
+    0% {opacity: 100%;}
+    10% {opacity: 50%;}
     20% {opacity: 0;}
     100% {opacity: 0;}
 }
 
-@keyframes breathe {
+@-webkit-keyframes breathe {
     0% {
    box-shadow: 0 0 0 0px rgba(188, 237, 243, 0.3);
     }
@@ -170,10 +168,11 @@ body {
     z-index: 5;
     cursor: pointer;
 }
-@keyframes fade-in-photo {
+@-webkit-keyframes fade-in-photo {
     0% {opacity: 0;}
     70% {opacity: 0;}
     80% {opacity: 100%;}
+    100% {opacity: 100%;}
 }
 
 .text_shadows {
@@ -194,7 +193,7 @@ body {
     animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
 }
 
-@keyframes shadows {
+@-webkit-keyframes shadows {
   0% {
     text-shadow: none;
   }
@@ -240,7 +239,7 @@ body {
   }
 }
 
-@keyframes move {
+@-webkit-keyframes move {
   0% {
     transform: translate(0px, 0px);
   }
@@ -279,12 +278,12 @@ body {
   animated-cursor 600ms linear infinite;
 }
 
-@keyframes animated-text{
+@-webkit-keyframes animated-text{
   from{width: 0;}
-  to{width: 79%;}
+  to{width: 85%;}
 }
 
-@keyframes animated-cursor{
+@-webkit-keyframes animated-cursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
