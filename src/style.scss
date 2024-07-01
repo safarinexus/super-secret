@@ -268,19 +268,18 @@ body {
   border-right: solid 5px rgba(255,255,255,.75);
   white-space: nowrap;
   overflow: hidden;    
-  font-size: 6vw;
+  font-size: 5lvw;
   color: var(--color-primary);
   /*
   rgba(255,255,255,.70);
   */
-  animation: animated-cursor 600ms linear infinite;
-  animation: animated-text 2s steps(25, end) 1s 1 normal both,
+  animation: animated-text 2s steps(20, end) 1s 1 normal both,
   animated-cursor 600ms linear infinite;
 }
 
 @-webkit-keyframes animated-text{
   from{width: 0;}
-  to{width: 85%;}
+  to{width: 64lvw;}
 }
 
 @-webkit-keyframes animated-cursor{
@@ -305,4 +304,17 @@ body {
   border: 0.5px solid #444;
   background-color: antiquewhite; 
 
+}
+
+@media only screen and (max-width: 600px) {
+  .type-text {
+    font-size: 4lvw;
+    animation: animated-text 2s steps(20, end) 1s 1 normal both
+  }
+
+  @-webkit-keyframes animated-text{
+    from{width: 0;}
+    to{width: 65lvw;}
+  }
+  
 }
