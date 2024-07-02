@@ -344,14 +344,14 @@ body {
 
 @media only screen and (max-width: 600px) {
   .type-text {
-    font-size: 6lvw;
+    font-size: 5.5lvw;
     animation: animated-text 2s steps(20, end) 1s 1 normal both,
     animated-cursor 600ms linear infinite;
   }
 
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 85lvw;}
+    to{width: 80lvw;}
   }
   
 }
