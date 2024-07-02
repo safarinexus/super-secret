@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const observerOptions3 = {
       root: null, // Use the viewport
       rootMargin: '-50% 0px -50% 0px', // Offset to trigger when the element is in the middle
-      threshold: 0 // Trigger when any part of the element is in view
+      threshold: 0// Trigger when any part of the element is in view
     };
   
     const observerCallback = (entries, observer) => {
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
             entry.target.innerHTML = '<h1 class="type-text" id="loved-ones">And from the ones that love you!</h1>';
-            observer.unobserve(entry.target); 
+            entry.target.classList.add('card-appear');
             }
         });
     };
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (entry.isIntersecting) {
           console.log('card appear!'); 
           entry.target.classList.add('card-appear');
-          observer.unobserve(entry.target); 
+          observer.unobserve(entry.target);
         }
       });
     };
@@ -201,7 +201,15 @@ addNote('shanna', 'dear kyla, happiest 21st bd <3 so happy to have met u thru em
 import shannaPhotos from './photoAdders/shannaPhotos'; 
 shannaPhotos();
 
-//bernice 
+//cong 
+import congNote from './congNote';
+congNote();
+import congPhotos from './photoAdders/congPhotos'; 
+congPhotos();
+
+//bernice
 addNote('bernice', 'happy 21st bitch. its been SO MANY YEARS together and im so absolutely proud of what youve achieved and the shit you had to overcome regardless of the situation. you are one tough little shit and honestly thank you for always being you. youre still the smartest, most bubbly and random girl, almost exactly the same as when we met (kidding i dont rmb alot from our childhood 😭) but yes. growing up with you has been such an interesting journey but i wouldnt wna have it any other way. wishing you happiness always my girl, theres so much more things to explore and experience and i hope you manage to enjoy them all ❤️ happy 21st girlie i love you so so so much 🎀😚', true); 
 import bernicePhotos from './photoAdders/bernicePhotos'; 
 bernicePhotos();
+
+
