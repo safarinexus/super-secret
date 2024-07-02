@@ -57,11 +57,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const target = document.querySelector('.content');
     const target2 = document.querySelector('.buffer');
     const cards = document.querySelectorAll('.card');
+    const firstpage = document.querySelector('.preview');
   
     const observerOptions = {
       root: null, // Default is the viewport
       rootMargin: '0px',
       threshold: 0.8 // Trigger 
+    };
+
+    const observerOptions2 = {
+      root: null, // Use the viewport
+      rootMargin: '-50% 0px -50% 0px', // Offset to trigger when the element is in the middle
+      threshold: 0 // Trigger when any part of the element is in view
+    };
+
+    const observerOptions3 = {
+      root: null, // Use the viewport
+      rootMargin: '-62% 0px -62% 0px', // Offset to trigger when the element is in the middle
+      threshold: 0 // Trigger when any part of the element is in view
     };
   
     const observerCallback = (entries, observer) => {
@@ -108,11 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     };
-    const observerOptions2 = {
-        root: null, // Use the viewport
-        rootMargin: '-50% 0px -50% 0px', // Offset to trigger when the element is in the middle
-        threshold: 0 // Trigger when any part of the element is in view
-      };
     
     const observerCallback2 = (entries, observer) => {
         entries.forEach(entry => {
@@ -133,13 +141,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     };
     
+    /*
+    const observerCallback4 = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          console.log('card appear!'); 
+          entry.target.classList.add('card-appear');
+          observer.unobserve(entry.target); 
+        }
+      });
+    };
+    */
     
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
     observer.observe(target);
     const observer2 = new IntersectionObserver(observerCallback2, observerOptions2);
     observer2.observe(target2);
-    const observer3 = new IntersectionObserver(observerCallback3, observerOptions2);
+    const observer3 = new IntersectionObserver(observerCallback3, observerOptions3);
     cards.forEach((card) => {
       console.log(card);
       observer3.observe(card);
@@ -160,3 +179,5 @@ alyssaPhotos();
 
 //zhi qian
 addNote('zhi qian', "Happy Birthday Kyla!!🎂 It's officially 21 now BIG GURL!! Im so glad to know you from emix and I rly miss those times when we all just come tgt and yap all day HAHAHAHA jst wanna say thank you for being there when i feel down and helping me when im feel lost. I rly appreciate everything you did for mee 🩷LOVE U MUA 💋I oso wanna tell you tht i rly respect you alot, putting your heart and soul, sacrificing your sleep just for emix. You are doing really great okay, dont let anyone or anything affect you and you def deserve all the rewards and happiness that comes your way❣️ Always rmb that im here for you if u need anything okay!! && Hope you have a blast on your birthday and may all your wishes come truee!! Also Last long with edgar~ yall v cute!! hehe 😉");
+
+//vallerie
