@@ -10,9 +10,6 @@ import siqi9 from '../assets/siqiPhotos/siqiPhoto9.jpeg';
 
 export default function siqiPhotos() {
     const slider = document.querySelector('#siqi-images'); 
-    //rmb to change this to fit all photos
-    slider.style.maxWidth = '600px';
-    // Create a video element
     const video1 = document.createElement('video');
     video1.height = 240;
     video1.src = siqi1;

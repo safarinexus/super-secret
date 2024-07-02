@@ -6,8 +6,6 @@ import alyssa5 from '../assets/alyssaPhotos/alyssaPhoto5.jpeg';
 
 export default function alyssaPhotos() {
     const slider = document.querySelector('#alyssa-images'); 
-    //rmb to change this to fit all photos
-    slider.style.maxWidth = '600px';
     const photo1 = new Image();
     photo1.src = alyssa1; 
     photo1.style.height = '300px'; 

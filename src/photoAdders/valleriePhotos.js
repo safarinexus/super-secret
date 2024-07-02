@@ -5,8 +5,6 @@ import vallerie4 from '../assets/valleriePhotos/valleriePhoto4.jpeg';
 
 export default function valleriePhotos() {
     const slider = document.querySelector('#vallerie-images'); 
-    //rmb to change this to fit all photos
-    slider.style.maxWidth = '600px';
     const photo1 = new Image();
     photo1.src = vallerie1; 
     photo1.style.height = '300px'; 

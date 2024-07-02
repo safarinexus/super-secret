@@ -5,8 +5,6 @@ import mel4 from '../assets/melPhotos/melPhoto4.jpeg';
 
 export default function melPhotos() {
     const slider = document.querySelector('#mel-images'); 
-    //rmb to change this to fit all photos
-    slider.style.maxWidth = '600px';
     const photo1 = new Image();
     photo1.src = mel1; 
     photo1.style.height = '300px'; 

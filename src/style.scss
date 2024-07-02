@@ -299,6 +299,7 @@ body {
 
 .card {
   box-sizing: border-box;
+  box-shadow: 5px 5px 30px -10px antiquewhite;
   padding: 20px;
   height: min(auto, 400px);
   width: 80%; 
@@ -320,8 +321,9 @@ body {
 }
 
 @keyframes card-appear {
-  from {opacity: 0%; scale: 0;}
-  to {opacity: 100%; scale: 1;}
+  0% {opacity: 0%; scale: 0;}
+  60% {opacity: 0%; scale: 0;}
+  100% {opacity: 100%; scale: 1;}
 }
 
 
@@ -333,6 +335,7 @@ body {
   box-shadow: 0px 0px 10px 5px #999;
   margin-bottom: 20px;
   white-space: nowrap;
+  max-width: max-content;
 }
 
 .from {

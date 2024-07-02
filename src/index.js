@@ -189,3 +189,13 @@ valleriePhotos();
 addNote('siqi', "HAPPY 21ST MY DEAR!!!!! honestly the “meeting twice” theory is saur true bc i knew u in sn but we only got closer aft jc ori heheehhahahah so grateful u entered my life la u adorable ball of sunshine <3 although we dont meet super often, i know i can count on u hehehe n it’s alw a good time w u la mi amor~ u were an integral part of my teens n now an integral part of my adulthood n i love u!!!!!! so much!!!!!!!!!!", true); 
 import siqiPhotos from './photoAdders/siqiPhotos'; 
 siqiPhotos();
+
+//vania
+addNote('vania', 'happy birthday ms kyla vp!!!!! so thankful for you and to be working with you through timeless and exco :"") continue to shake ass and stay a slaying queen in EMIX hehe sORRY IDH any meaningful photos w u kyla :-((( ur face when ryan was talking was priceless HAHHAHA', true); 
+import vaniaPhotos from './photoAdders/vaniaPhotos'; 
+vaniaPhotos();
+
+//shanna
+addNote('shanna', 'dear kyla, happiest 21st bd <3 so happy to have met u thru emix and omg blaw class wow tb and we became so much more closer thru sxayan!! v grateful for all the amazing memories we shared tgt, esp all the fun an laughter we had throughout the past 2 years (omg so long alr….) know that you’re doing such a great job as an exco and i’m always v proud of u!!! tho i don’t always come for emix HAHAHAHA OOOPS my heart is still w emix & and i’ll be supporting u from outside still keke HOPE OUR FS W SYAXAN REMAINS SO SLAYYYYY AND JIAYOUS IN everything that you do okie, U GOT THIS! also u and edgar must go a long way ok, i wan to witness the real thing without edgar saying “she’s too small for me” HAHAHAHAHAH love you lots girl!!! muacks 💗💗💗', true); 
+import shannaPhotos from './photoAdders/shannaPhotos'; 
+shannaPhotos();
