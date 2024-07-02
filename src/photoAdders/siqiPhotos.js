@@ -1,4 +1,4 @@
-import siqi1 from '../assets/siqiPhotos/siqiPhoto1.mp4';
+//add the last vid
 import siqi2 from '../assets/siqiPhotos/siqiPhoto2.jpeg';
 import siqi3 from '../assets/siqiPhotos/siqiPhoto3.mp4';
 import siqi4 from '../assets/siqiPhotos/siqiPhoto4.jpeg';
@@ -10,10 +10,6 @@ import siqi9 from '../assets/siqiPhotos/siqiPhoto9.jpeg';
 
 export default function siqiPhotos() {
     const slider = document.querySelector('#siqi-images'); 
-    const video1 = document.createElement('video');
-    video1.height = 240;
-    video1.src = siqi1;
-    video1.controls = true;
     const photo2 = new Image();
     photo2.src = siqi2; 
     photo2.style.height = '240px'; 
@@ -40,9 +36,6 @@ export default function siqiPhotos() {
     photo9.src = siqi9; 
     photo9.style.height = '240px'; 
     
-
-
-    slider.appendChild(video1);
     slider.appendChild(photo2); 
     slider.appendChild(video2);
     slider.appendChild(photo4); 
