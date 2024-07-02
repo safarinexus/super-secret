@@ -21,21 +21,9 @@ module.exports = {
                 use: ["style-loader", "css-loader", "sass-loader"]
             }, 
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i, 
+                test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i, 
                 type: 'asset/resource', 
             }, 
-            {
-                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                  {
-                    loader: "file-loader",
-                    options: {
-                      name: "[name].[contenthash].[ext]",
-                      outputPath: "fonts/",
-                    },
-                  },
-                ],
-            },
         ]
     }
 };
