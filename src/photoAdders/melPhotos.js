@@ -5,19 +5,20 @@ import mel4 from '../assets/melPhotos/melPhoto4.jpeg';
 
 export default function melPhotos() {
     const slider = document.querySelector('#mel-images'); 
+    //rmb to change this to fit all photos
     slider.style.maxWidth = '600px';
     const photo1 = new Image();
     photo1.src = mel1; 
-    photo1.style.height = '200px'; 
+    photo1.style.height = '300px'; 
     const photo2 = new Image();
     photo2.src = mel2; 
-    photo2.style.height = '200px'; 
+    photo2.style.height = '300px'; 
     const photo3 = new Image();
     photo3.src = mel3; 
-    photo3.style.height = '200px'; 
+    photo3.style.height = '300px'; 
     const photo4 = new Image();
     photo4.src = mel4; 
-    photo4.style.height = '200px'; 
+    photo4.style.height = '300px'; 
 
     slider.appendChild(photo1); 
     slider.appendChild(photo2); 
