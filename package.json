@@ -20,6 +20,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@tsparticles/confetti": "^3.4.0"
+    "@tsparticles/confetti": "^3.4.0",
+    "animate.css": "^4.1.1"
   }
 }

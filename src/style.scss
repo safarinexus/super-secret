@@ -122,7 +122,7 @@ body {
     100% {opacity: 0;}
 }
 
-@-webkit-keyframes breathe {
+@keyframes breathe {
     0% {
    box-shadow: 0 0 0 0px rgba(188, 237, 243, 0.3);
     }
@@ -161,14 +161,14 @@ body {
     margin-top: 100px;
     content: url(./assets/circlePhoto.jpg);
     animation: fade-in-photo linear;
-    animation-timeline: scroll(); 
+    animation-timeline: scroll(), auto; 
     animation-range-start: 0;
     animation-range-end: contain 50%; 
     border-radius: 50%;
     z-index: 5;
     cursor: pointer;
 }
-@-webkit-keyframes fade-in-photo {
+@keyframes fade-in-photo {
     0% {opacity: 0;}
     70% {opacity: 0;}
     80% {opacity: 100%;}
@@ -193,7 +193,7 @@ body {
     animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
 }
 
-@-webkit-keyframes shadows {
+@keyframes shadows {
   0% {
     text-shadow: none;
   }
@@ -239,7 +239,7 @@ body {
   }
 }
 
-@-webkit-keyframes move {
+@keyframes move {
   0% {
     transform: translate(0px, 0px);
   }
@@ -277,12 +277,12 @@ body {
   animated-cursor 600ms linear infinite;
 }
 
-@-webkit-keyframes animated-text{
+@keyframes animated-text{
   from{width: 0;}
   to{width: 64lvw;}
 }
 
-@-webkit-keyframes animated-cursor{
+@keyframes animated-cursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
@@ -293,17 +293,52 @@ body {
   height: auto;
   display: flex; 
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 
 .card {
-  height: auto; 
-  width: 70%; 
+  box-sizing: border-box;
+  padding: 20px;
+  width: 80%; 
   border-radius: 20px;
-  border: 0.5px solid #444;
-  background-color: antiquewhite; 
+  border: 0.5px solid #999; 
+  background: linear-gradient(225deg, #999, antiquewhite);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+  opacity: 0%; 
+}
 
+.card-appear {
+  animation: 1s card-appear linear; 
+  opacity: inherit; 
+}
+
+@keyframes card-appear {
+  from {opacity: 0%; scale: 0;}
+  to {opacity: 100%; scale: 1;}
+}
+
+
+.image-slider {
+  overflow-x: scroll;
+  display: flex; 
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #999;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.from {
+  align-self: end;
+  width: fit-content;
+  font-style: italic;
+  font-weight: lighter;
 }
 
 @media only screen and (max-width: 600px) {
@@ -313,7 +348,7 @@ body {
     animated-cursor 600ms linear infinite;
   }
 
-  @-webkit-keyframes animated-text{
+  @keyframes animated-text{
     from{width: 0;}
     to{width: 72lvw;}
   }
