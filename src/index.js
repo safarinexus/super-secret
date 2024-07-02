@@ -2,16 +2,15 @@ console.log('initiated');
 
 import './style.scss';
 import { confetti } from "@tsparticles/confetti";
-import 'animate.css';
 
+//reset scroll on reload
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
 
+//confetti effects
 const text = document.querySelector('.text_shadows'); 
 const photous = document.querySelector(".photous");
-const imageSlider = document.querySelector('.image-slider');
-
 
 text.addEventListener("click", () => {
     confetti({
@@ -52,7 +51,7 @@ photous.addEventListener("click", () => {
     });
 });
 
-
+//scroll based animations
 document.addEventListener('DOMContentLoaded', function() {
     const target = document.querySelector('.content');
     const target2 = document.querySelector('.buffer');
@@ -163,8 +162,10 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(card);
       observer3.observe(card);
     });
-  });
+});
 
+
+//adding the notes
 import addNote from './addNote';
 
 //mel
@@ -199,3 +200,8 @@ vaniaPhotos();
 addNote('shanna', 'dear kyla, happiest 21st bd <3 so happy to have met u thru emix and omg blaw class wow tb and we became so much more closer thru sxayan!! v grateful for all the amazing memories we shared tgt, esp all the fun an laughter we had throughout the past 2 years (omg so long alr….) know that you’re doing such a great job as an exco and i’m always v proud of u!!! tho i don’t always come for emix HAHAHAHA OOOPS my heart is still w emix & and i’ll be supporting u from outside still keke HOPE OUR FS W SYAXAN REMAINS SO SLAYYYYY AND JIAYOUS IN everything that you do okie, U GOT THIS! also u and edgar must go a long way ok, i wan to witness the real thing without edgar saying “she’s too small for me” HAHAHAHAHAH love you lots girl!!! muacks 💗💗💗', true); 
 import shannaPhotos from './photoAdders/shannaPhotos'; 
 shannaPhotos();
+
+//bernice 
+addNote('bernice', 'happy 21st bitch. its been SO MANY YEARS together and im so absolutely proud of what youve achieved and the shit you had to overcome regardless of the situation. you are one tough little shit and honestly thank you for always being you. youre still the smartest, most bubbly and random girl, almost exactly the same as when we met (kidding i dont rmb alot from our childhood 😭) but yes. growing up with you has been such an interesting journey but i wouldnt wna have it any other way. wishing you happiness always my girl, theres so much more things to explore and experience and i hope you manage to enjoy them all ❤️ happy 21st girlie i love you so so so much 🎀😚', true); 
+import bernicePhotos from './photoAdders/bernicePhotos'; 
+bernicePhotos();

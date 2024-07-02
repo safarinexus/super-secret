@@ -160,19 +160,9 @@ body {
     width: auto;  
     margin-top: 100px;
     content: url(./assets/circlePhoto.jpg);
-    animation: fade-in-photo linear;
-    animation-timeline: scroll(), auto; 
-    animation-range-start: 0;
-    animation-range-end: contain 50%; 
     border-radius: 50%;
     z-index: 5;
     cursor: pointer;
-}
-@keyframes fade-in-photo {
-    0% {opacity: 0;}
-    70% {opacity: 0;}
-    80% {opacity: 100%;}
-    100% {opacity: 100%;}
 }
 
 .text_shadows {
