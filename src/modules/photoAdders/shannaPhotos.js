@@ -1,6 +1,6 @@
-import shanna1 from '../assets/shannaPhotos/shannaPhoto1.jpeg';
-import shanna2 from '../assets/shannaPhotos/shannaPhoto2.jpeg';
-import shanna3 from '../assets/shannaPhotos/shannaPhoto3.jpeg';
+import shanna1 from '../../assets/shannaPhotos/shannaPhoto1.jpeg';
+import shanna2 from '../../assets/shannaPhotos/shannaPhoto2.jpeg';
+import shanna3 from '../../assets/shannaPhotos/shannaPhoto3.jpeg';
 
 export default function shannaPhotos() {
     const slider = document.querySelector('#shanna-images'); 

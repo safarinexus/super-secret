@@ -1,8 +1,8 @@
-import alyssa1 from '../assets/alyssaPhotos/alyssaPhoto1.jpeg';
-import alyssa2 from '../assets/alyssaPhotos/alyssaPhoto2.jpeg';
-import alyssa3 from '../assets/alyssaPhotos/alyssaPhoto3.jpeg';
-import alyssa4 from '../assets/alyssaPhotos/alyssaPhoto4.jpeg';
-import alyssa5 from '../assets/alyssaPhotos/alyssaPhoto5.jpeg';
+import alyssa1 from '../../assets/alyssaPhotos/alyssaPhoto1.jpeg';
+import alyssa2 from '../../assets/alyssaPhotos/alyssaPhoto2.jpeg';
+import alyssa3 from '../../assets/alyssaPhotos/alyssaPhoto3.jpeg';
+import alyssa4 from '../../assets/alyssaPhotos/alyssaPhoto4.jpeg';
+import alyssa5 from '../../assets/alyssaPhotos/alyssaPhoto5.jpeg';
 
 export default function alyssaPhotos() {
     const slider = document.querySelector('#alyssa-images'); 

@@ -1,6 +1,6 @@
-import cong1 from '../assets/congPhotos/congPhoto1.mp4'; 
-import cong2 from '../assets/congPhotos/congPhoto2.mp4'; 
-import cong3 from '../assets/congPhotos/congPhoto3.mp4'; 
+import cong1 from '../../assets/congPhotos/congPhoto1.mp4'; 
+import cong2 from '../../assets/congPhotos/congPhoto2.mp4'; 
+import cong3 from '../../assets/congPhotos/congPhoto3.mp4'; 
 
 export default function congPhotos() {
     const slider = document.querySelector('#cong-images'); 

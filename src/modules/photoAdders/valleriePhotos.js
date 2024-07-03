@@ -1,7 +1,7 @@
-import vallerie1 from '../assets/valleriePhotos/valleriePhoto1.jpeg';
-import vallerie2 from '../assets/valleriePhotos/valleriePhoto2.jpeg';
-import vallerie3 from '../assets/valleriePhotos/valleriePhoto3.jpeg';
-import vallerie4 from '../assets/valleriePhotos/valleriePhoto4.jpeg';
+import vallerie1 from '../../assets/valleriePhotos/valleriePhoto1.jpeg';
+import vallerie2 from '../../assets/valleriePhotos/valleriePhoto2.jpeg';
+import vallerie3 from '../../assets/valleriePhotos/valleriePhoto3.jpeg';
+import vallerie4 from '../../assets/valleriePhotos/valleriePhoto4.jpeg';
 
 export default function valleriePhotos() {
     const slider = document.querySelector('#vallerie-images'); 

@@ -1,4 +1,4 @@
-import vania1 from '../assets/vaniaPhotos/vaniaPhoto1.jpg';
+import vania1 from '../../assets/vaniaPhotos/vaniaPhoto1.jpg';
 
 export default function vaniaPhotos() {
     const slider = document.querySelector('#vania-images'); 

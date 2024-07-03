@@ -1,10 +1,10 @@
-import kim1 from '../assets/kimPhotos/kimPhoto1.jpg'; 
-import kim2 from '../assets/kimPhotos/kimPhoto2.jpg';
-import kim3 from '../assets/kimPhotos/kimPhoto3.jpg';
-import kim4 from '../assets/kimPhotos/kimPhoto4.mp4';
-import kim5 from '../assets/kimPhotos/kimPhoto5.mp4';
-import kim6 from '../assets/kimPhotos/kimPhoto6.jpg';
-import kim7 from '../assets/kimPhotos/kimPhoto7.jpg';
+import kim1 from '../../assets/kimPhotos/kimPhoto1.jpg'; 
+import kim2 from '../../assets/kimPhotos/kimPhoto2.jpg';
+import kim3 from '../../assets/kimPhotos/kimPhoto3.jpg';
+import kim4 from '../../assets/kimPhotos/kimPhoto4.mp4';
+import kim5 from '../../assets/kimPhotos/kimPhoto5.mp4';
+import kim6 from '../../assets/kimPhotos/kimPhoto6.jpg';
+import kim7 from '../../assets/kimPhotos/kimPhoto7.jpg';
 
 
 

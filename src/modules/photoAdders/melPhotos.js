@@ -1,7 +1,7 @@
-import mel1 from '../assets/melPhotos/melPhoto1.jpeg';
-import mel2 from '../assets/melPhotos/melPhoto2.jpeg';
-import mel3 from '../assets/melPhotos/melPhoto3.jpeg';
-import mel4 from '../assets/melPhotos/melPhoto4.jpeg';
+import mel1 from '../../assets/melPhotos/melPhoto1.jpeg';
+import mel2 from '../../assets/melPhotos/melPhoto2.jpeg';
+import mel3 from '../../assets/melPhotos/melPhoto3.jpeg';
+import mel4 from '../../assets/melPhotos/melPhoto4.jpeg';
 
 export default function melPhotos() {
     const slider = document.querySelector('#mel-images'); 

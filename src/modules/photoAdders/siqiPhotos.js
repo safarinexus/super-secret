@@ -1,12 +1,12 @@
-import siqi2 from '../assets/siqiPhotos/siqiPhoto2.jpeg';
-import siqi3 from '../assets/siqiPhotos/siqiPhoto3.mp4';
-import siqi4 from '../assets/siqiPhotos/siqiPhoto4.jpeg';
-import siqi5 from '../assets/siqiPhotos/siqiPhoto5.jpeg';
-import siqi6 from '../assets/siqiPhotos/siqiPhoto6.jpeg';
-import siqi7 from '../assets/siqiPhotos/siqiPhoto7.jpeg';
-import siqi8 from '../assets/siqiPhotos/siqiPhoto8.jpeg';
-import siqi9 from '../assets/siqiPhotos/siqiPhoto9.jpeg';
-import siqi10 from '../assets/siqiPhotos/siqiPhoto10.mp4'; 
+import siqi2 from '../../assets/siqiPhotos/siqiPhoto2.jpeg';
+import siqi3 from '../../assets/siqiPhotos/siqiPhoto3.mp4';
+import siqi4 from '../../assets/siqiPhotos/siqiPhoto4.jpeg';
+import siqi5 from '../../assets/siqiPhotos/siqiPhoto5.jpeg';
+import siqi6 from '../../assets/siqiPhotos/siqiPhoto6.jpeg';
+import siqi7 from '../../assets/siqiPhotos/siqiPhoto7.jpeg';
+import siqi8 from '../../assets/siqiPhotos/siqiPhoto8.jpeg';
+import siqi9 from '../../assets/siqiPhotos/siqiPhoto9.jpeg';
+import siqi10 from '../../assets/siqiPhotos/siqiPhoto10.mp4'; 
 
 
 export default function siqiPhotos() {

@@ -1,4 +1,4 @@
-import bernice1 from '../assets/bernicePhotos/bernicePhoto1.mp4';
+import bernice1 from '../../assets/bernicePhotos/bernicePhoto1.mp4';
 
 
 export default function bernicePhotos() {
