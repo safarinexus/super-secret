@@ -12,15 +12,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #000;
     position: relative; 
     margin: 0; 
     padding: 0; 
     scroll-behavior: smooth;
+    background-color: #000;
 }
 
 /*======================WELCOME ELEMENT=================*/
-#intro {
+.intro {
     display: flex; 
     flex-direction: column;
     justify-content: end;
@@ -33,8 +33,19 @@ body {
     height: 100svh;
 }
 
-#intro * {
+.intro * {
     margin: 0; 
+}
+
+.focus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    z-index: -1000;
 }
 
 .reflective {
@@ -92,7 +103,8 @@ body {
 }
 
 /*===================HAPPY BIRTHDAY ELEMENT=================*/
-#content {
+.content {
+    /*background: linear-gradient(45deg, #ded6d5, antiquewhite);*/
     height: 100svh;
     display: flex;
     flex-direction: column;
@@ -192,7 +204,6 @@ body {
 }
 
 .from-edgar {
-  color: white;
   font-family: 'Helvetica Neue', sans-serif;
   font-style: italic;
   font-weight: 100;
@@ -205,7 +216,7 @@ body {
 
 /*======================LOVED-ONES ELEMENT==================*/
 
-#loved-ones {
+.loved-ones {
   height: 200px; 
   display: flex; 
   align-items: center;
@@ -232,7 +243,7 @@ body {
 
 /*=======================WISHES ELEMENT===================*/
 
-#wishes {
+.wishes {
   min-height: 100svh;
   width: 100%; 
   height: auto;

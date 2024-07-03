@@ -44,7 +44,7 @@ export default function confettiEffects() {
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-        const target = document.querySelector('#content');
+        const target = document.querySelector('.content');
         const observerOptions = {
             root: null, // Default is the viewport
             rootMargin: '0px',

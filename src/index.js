@@ -7,15 +7,6 @@ if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
 
-//confetti effects
-import confettiEffects from './modules/confettiEffects';
-confettiEffects(); 
-
-//scroll based animations
-import scrollAnimation from './modules/scrollAnimation'; 
-scrollAnimation();
-
-
 //adding the notes
 import addNote from './modules/addNote';
 
@@ -67,3 +58,16 @@ bernicePhotos();
 addNote('kim', "happy 21st bday love!! i'm so thankful to have met you in uni and get to know you better as time passed! your presence is always so pleasant to have and thank you for always including me in plans that don't always involve my batch / friend group!! very very thankful for you <33 and you are so capable and i'm very proud of what you have achieved so far!! you are such a strong and stable gurlie and just keep doing what you have been doing ok!! i will always be here to support you / talk to you / just sit there in your presence! love u bbg", true); 
 import kimPhotos from './modules/photoAdders/kimPhotos'; 
 kimPhotos();
+
+//confetti effects
+import confettiEffects from './modules/confettiEffects';
+confettiEffects(); 
+
+//loved-ones text animations
+import lovedOnesAnimation from './modules/lovedOnesAnimation'; 
+lovedOnesAnimation();
+
+//card animations
+import cardAnimations from './modules/cardAnimations'; 
+cardAnimations();
+
