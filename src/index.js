@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
             entry.target.innerHTML = '<h1 class="type-text" id="loved-ones">And from the ones that love you!</h1>';
             entry.target.classList.add('card-appear');
+            observer.unobserve(entry.target);
             }
         });
     };
@@ -212,4 +213,7 @@ addNote('bernice', 'happy 21st bitch. its been SO MANY YEARS together and im so 
 import bernicePhotos from './photoAdders/bernicePhotos'; 
 bernicePhotos();
 
-
+//kim 
+addNote('kim', "happy 21st bday love!! i'm so thankful to have met you in uni and get to know you better as time passed! your presence is always so pleasant to have and thank you for always including me in plans that don't always involve my batch / friend group!! very very thankful for you <33 and you are so capable and i'm very proud of what you have achieved so far!! you are such a strong and stable gurlie and just keep doing what you have been doing ok!! i will always be here to support you / talk to you / just sit there in your presence! love u bbg", true); 
+import kimPhotos from './photoAdders/kimPhotos'; 
+kimPhotos();
