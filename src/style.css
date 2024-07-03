@@ -1,26 +1,7 @@
-$maincolor: #000; 
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-:root {
-    /*
-    --color-primary: #5192ED;
-    --color-secondary: #69A1F0;
-    --color-tertiary: #7EAEF2;
-    --color-quaternary: #90BAF5;
-    --color-quinary: #A2C4F5;
-  */
-    background-color: $maincolor;
-    --color-primary: #c246e7;
-    --color-secondary: #4a8dda;
-    --color-tertiary: #4cda5f;
-    --color-quaternary: #f07a6a;
-    --color-quinary: #dd2727;
-  
 }
 
 body {
@@ -31,19 +12,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $maincolor;
+    background-color: #000;
     position: relative; 
     margin: 0; 
     padding: 0; 
     scroll-behavior: smooth;
 }
 
-.preview {
+/*======================WELCOME ELEMENT=================*/
+#intro {
     display: flex; 
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica Neue', sans-serif;
     color: white; 
     font-size: 0.5em;
     padding: 0; 
@@ -51,10 +33,13 @@ body {
     height: 100svh;
 }
 
+#intro * {
+    margin: 0; 
+}
+
 .reflective {
     position: relative; 
     bottom: 40%;
-    font-family: 'Helvetica Neue', sans-serif; 
     font-style: italic; 
     font-size: 10svh;
     letter-spacing: 1px;
@@ -62,17 +47,15 @@ body {
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
     background-size: 99%;
-    animation: animate 4s linear infinite;
+    animation: reflective 4s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0); 
     user-select: none;
 }
-
-@-webkit-keyframes animate {
+@keyframes reflective {
     0% {
         background-position: -9000%;
     }
-
     100% {
         background-position: 9000%;
     }
@@ -83,21 +66,6 @@ body {
     position: relative;
     bottom: 30px; 
     left: 2px;
-    animation: text-fade-out linear;
-    animation-timeline: scroll(); 
-    animation-range: cover;
-    text-align: center;
-    user-select: none;
-}
-
-@-webkit-keyframes text-fade-out {
-  0% {opacity: 100%;}
-  20% {opacity: 0;}
-  100% {opacity: 0;}
-}
-
-.preview * {
-    margin: 0; 
 }
 
 .scroll-circle {
@@ -109,19 +77,8 @@ body {
     height: 20px;
     border-radius: 50%;
     background: rgba(188, 237, 243, 0.889);
-    animation: circle-fade-out 1s linear, breathe 1.5s infinite;
-    animation-timeline: scroll(), auto; 
-    animation-range: contain;
+    animation: breathe 1.5s infinite;
 }
-
-
-@-webkit-keyframes circle-fade-out {
-    0% {opacity: 100%;}
-    10% {opacity: 50%;}
-    20% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
 @keyframes breathe {
     0% {
    box-shadow: 0 0 0 0px rgba(188, 237, 243, 0.3);
@@ -132,15 +89,106 @@ body {
     100% {
    box-shadow: 0 0 0 0px rgba(188, 237, 243, 0.3);
     }
-   }
+}
 
-.content {
+/*===================HAPPY BIRTHDAY ELEMENT=================*/
+#content {
     height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.text_shadows {
+    text-shadow: 3px 3px 0 #4a8dda, 6px 6px 0 #4cda5f,
+        9px 9px #f07a6a, 12px 12px 0 #dd2727;
+    font-family: 'vt323';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2.5rem + 5vw);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #c246e7;
+    background-clip: text;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    user-select: none;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+}
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 #4a8dda;
+  }
+  20% {
+    text-shadow: 3px 3px 0 #4a8dda,
+      6px 6px 0 #4cda5f;
+  }
+  30% {
+    text-shadow: 3px 3px 0 #4a8dda,
+      6px 6px 0 #4cda5f, 9px 9px #f07a6a;
+  }
+  40% {
+    text-shadow: 3px 3px 0 #4a8dda,
+      6px 6px 0 #4cda5f, 9px 9px #f07a6a,
+      12px 12px 0 #dd2727;
+  }
+  50% {
+    text-shadow: 3px 3px 0 #4a8dda,
+      6px 6px 0 #4cda5f, 9px 9px #f07a6a,
+      12px 12px 0 #dd2727;
+  }
+  60% {
+    text-shadow: 3px 3px 0 #4a8dda,
+      6px 6px 0 #4cda5f, 9px 9px #f07a6a,
+      12px 12px 0 #dd2727;
+  }
+  70% {
+    text-shadow: 3px 3px 0 #4a8dda,
+      6px 6px 0 #4cda5f, 9px 9px #f07a6a;
+  }
+  80% {
+    text-shadow: 3px 3px 0 #4a8dda,
+      6px 6px 0 #4cda5f;
+  }
+  90% {
+    text-shadow: 3px 3px 0 #4a8dda;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@keyframes move {
+    0% {
+    transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(-12px, -12px);
+    }
+    50% {
+        transform: translate(-12px, -12px);
+    }
+    60% {
+        transform: translate(-12px, -12px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.photous {
+    height: 150px; 
+    width: auto;  
+    margin-top: 100px;
+    content: url(./assets/circlePhoto.jpg);
+    border-radius: 50%;
+    z-index: 5;
+    cursor: pointer;
 }
 
 .from-edgar {
@@ -155,99 +203,9 @@ body {
   animation-range-end: contain 50%; 
 }
 
-.photous {
-    height: 150px; 
-    width: auto;  
-    margin-top: 100px;
-    content: url(./assets/circlePhoto.jpg);
-    border-radius: 50%;
-    z-index: 5;
-    cursor: pointer;
-}
+/*======================LOVED-ONES ELEMENT==================*/
 
-.text_shadows {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
-        9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-    font-family: 'vt323';
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: calc(2.5rem + 5vw);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: var(--color-primary);
-    background-clip: text;
-    letter-spacing: 0.4rem;
-    cursor: pointer;
-    user-select: none;
-    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
-}
-
-@keyframes shadows {
-  0% {
-    text-shadow: none;
-  }
-  10% {
-    text-shadow: 3px 3px 0 var(--color-secondary);
-  }
-  20% {
-    text-shadow: 3px 3px 0 var(--color-secondary),
-      6px 6px 0 var(--color-tertiary);
-  }
-  30% {
-    text-shadow: 3px 3px 0 var(--color-secondary),
-      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-  }
-  40% {
-    text-shadow: 3px 3px 0 var(--color-secondary),
-      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-      12px 12px 0 var(--color-quinary);
-  }
-  50% {
-    text-shadow: 3px 3px 0 var(--color-secondary),
-      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-      12px 12px 0 var(--color-quinary);
-  }
-  60% {
-    text-shadow: 3px 3px 0 var(--color-secondary),
-      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-      12px 12px 0 var(--color-quinary);
-  }
-  70% {
-    text-shadow: 3px 3px 0 var(--color-secondary),
-      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-  }
-  80% {
-    text-shadow: 3px 3px 0 var(--color-secondary),
-      6px 6px 0 var(--color-tertiary);
-  }
-  90% {
-    text-shadow: 3px 3px 0 var(--color-secondary);
-  }
-  100% {
-    text-shadow: none;
-  }
-}
-
-@keyframes move {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  40% {
-    transform: translate(-12px, -12px);
-  }
-  50% {
-    transform: translate(-12px, -12px);
-  }
-  60% {
-    transform: translate(-12px, -12px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-
-.buffer {
+#loved-ones {
   height: 200px; 
   display: flex; 
   align-items: center;
@@ -259,25 +217,22 @@ body {
   white-space: nowrap;
   overflow: hidden;    
   font-size: 5lvw;
-  color: var(--color-primary);
-  /*
-  rgba(255,255,255,.70);
-  */
+  color: #c246e7;
   animation: animated-text 2s steps(20, end) 1s 1 normal both,
   animated-cursor 600ms linear infinite;
 }
-
 @keyframes animated-text{
   from{width: 0;}
   to{width: 64lvw;}
 }
-
 @keyframes animated-cursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
 
-.wishes {
+/*=======================WISHES ELEMENT===================*/
+
+#wishes {
   min-height: 100svh;
   width: 100%; 
   height: auto;
@@ -338,6 +293,8 @@ body {
 .endbuffer {
   height: 100px;
 }
+
+/*===========================OTHERS========================*/
 
 @media only screen and (max-width: 600px) {
   .type-text {

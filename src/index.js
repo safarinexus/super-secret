@@ -1,6 +1,6 @@
 console.log('initiated'); 
 
-import './style.scss';
+import './style.css';
 
 //reset scroll on reload
 if ('scrollRestoration' in history) {

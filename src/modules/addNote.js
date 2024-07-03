@@ -1,5 +1,5 @@
 export default function addNote(person, note, photo=false) {
-    const wishes = document.querySelector(".wishes");
+    const wishes = document.querySelector("#wishes");
     const curr = document.createElement('div'); 
     curr.classList.add('card'); 
 

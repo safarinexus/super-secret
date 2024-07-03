@@ -1,8 +1,7 @@
 export default function scrollAnimation() {
     document.addEventListener('DOMContentLoaded', function() {
-        const textArea = document.querySelector('.buffer');
+        const textArea = document.querySelector('#loved-ones');
         const cards = document.querySelectorAll('.card');
-        const firstPage = document.querySelector('.preview');
     
         const observerOptions = {
           root: null, // Use the viewport
@@ -21,8 +20,7 @@ export default function scrollAnimation() {
         const observerCallback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                entry.target.innerHTML = '<h1 class="type-text" id="loved-ones">And from the ones that love you!</h1>';
-                entry.target.classList.add('card-appear');
+                entry.target.innerHTML = '<h1 class="type-text">And from the ones that love you!</h1>';
                 observer.unobserve(entry.target);
                 }
             });
