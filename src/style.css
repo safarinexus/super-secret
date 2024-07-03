@@ -131,49 +131,49 @@ body {
     animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
 }
 @keyframes shadows {
-  0% {
+0% {
     text-shadow: none;
-  }
-  10% {
+}
+10% {
     text-shadow: 3px 3px 0 #4a8dda;
-  }
-  20% {
+}
+20% {
     text-shadow: 3px 3px 0 #4a8dda,
-      6px 6px 0 #4cda5f;
-  }
-  30% {
+    6px 6px 0 #4cda5f;
+}
+30% {
     text-shadow: 3px 3px 0 #4a8dda,
-      6px 6px 0 #4cda5f, 9px 9px #f07a6a;
-  }
-  40% {
+    6px 6px 0 #4cda5f, 9px 9px #f07a6a;
+}
+40% {
     text-shadow: 3px 3px 0 #4a8dda,
-      6px 6px 0 #4cda5f, 9px 9px #f07a6a,
-      12px 12px 0 #dd2727;
-  }
-  50% {
+    6px 6px 0 #4cda5f, 9px 9px #f07a6a,
+    12px 12px 0 #dd2727;
+}
+50% {
     text-shadow: 3px 3px 0 #4a8dda,
-      6px 6px 0 #4cda5f, 9px 9px #f07a6a,
-      12px 12px 0 #dd2727;
-  }
-  60% {
+    6px 6px 0 #4cda5f, 9px 9px #f07a6a,
+    12px 12px 0 #dd2727;
+}
+60% {
     text-shadow: 3px 3px 0 #4a8dda,
-      6px 6px 0 #4cda5f, 9px 9px #f07a6a,
-      12px 12px 0 #dd2727;
-  }
-  70% {
+    6px 6px 0 #4cda5f, 9px 9px #f07a6a,
+    12px 12px 0 #dd2727;
+}
+70% {
     text-shadow: 3px 3px 0 #4a8dda,
-      6px 6px 0 #4cda5f, 9px 9px #f07a6a;
-  }
-  80% {
+    6px 6px 0 #4cda5f, 9px 9px #f07a6a;
+}
+80% {
     text-shadow: 3px 3px 0 #4a8dda,
-      6px 6px 0 #4cda5f;
-  }
-  90% {
+    6px 6px 0 #4cda5f;
+}
+90% {
     text-shadow: 3px 3px 0 #4a8dda;
-  }
-  100% {
+}
+100% {
     text-shadow: none;
-  }
+}
 }
 @keyframes move {
     0% {
@@ -204,119 +204,119 @@ body {
 }
 
 .from-edgar {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-style: italic;
-  font-weight: 100;
-  font-size: small;
-  animation: fade-in-photo linear;
-  animation-timeline: scroll(); 
-  animation-range-start: 0;
-  animation-range-end: contain 50%; 
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: small;
+    animation: fade-in-photo linear;
+    animation-timeline: scroll(); 
+    animation-range-start: 0;
+    animation-range-end: contain 50%; 
 }
 
 /*======================LOVED-ONES ELEMENT==================*/
 
 .loved-ones {
-  height: 200px; 
-  display: flex; 
-  align-items: center;
+    height: 200px; 
+    display: flex; 
+    align-items: center;
 }
 
 .type-text {
-  margin-left: 20px;
-  border-right: solid 5px rgba(255,255,255,.75);
-  white-space: nowrap;
-  overflow: hidden;    
-  font-size: 5lvw;
-  color: #c246e7;
-  animation: animated-text 2s steps(20, end) 1s 1 normal both,
-  animated-cursor 600ms linear infinite;
+    margin-left: 20px;
+    border-right: solid 5px rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-size: 5lvw;
+    color: #c246e7;
+    animation: animated-text 2s steps(20, end) 1s 1 normal both,
+    animated-cursor 600ms linear infinite;
 }
 @keyframes animated-text{
-  from{width: 0;}
-  to{width: 64lvw;}
+    from{width: 0;}
+    to{width: 64lvw;}
 }
 @keyframes animated-cursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
 }
 
 /*=======================WISHES ELEMENT===================*/
 
 .wishes {
-  min-height: 100svh;
-  width: 100%; 
-  height: auto;
-  display: flex; 
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+    min-height: 100svh;
+    width: 100%; 
+    height: auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .card {
-  box-sizing: border-box;
-  box-shadow: 5px 5px 30px -10px antiquewhite;
-  padding: 20px;
-  height: min(auto, 400px);
-  width: 80%; 
-  border-radius: 20px;
-  border: 0.5px solid #999; 
-  background: linear-gradient(225deg, #999, antiquewhite);
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 50px; 
-  margin-bottom: 50px; 
-  opacity: 0%; 
+    box-sizing: border-box;
+    box-shadow: 5px 5px 30px -10px antiquewhite;
+    padding: 20px;
+    height: min(auto, 400px);
+    width: 80%; 
+    border-radius: 20px;
+    border: 0.5px solid #999; 
+    background: linear-gradient(225deg, #999, antiquewhite);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    opacity: 0%; 
 }
 
 .card-appear {
-  animation: 1s card-appear linear; 
-  opacity: inherit; 
+    animation: 1s card-appear linear; 
+    opacity: inherit; 
 }
 
 @keyframes card-appear {
-  0% {opacity: 0%; scale: 0;}
-  25% {opacity: 0%; scale: 0;}
-  100% {opacity: 100%; scale: 1;}
+    0% {opacity: 0%; scale: 0;}
+    25% {opacity: 0%; scale: 0;}
+    100% {opacity: 100%; scale: 1;}
 }
 
 
 .image-slider {
-  overflow-x: scroll;
-  display: flex; 
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px #999;
-  margin-bottom: 20px;
-  white-space: nowrap;
-  max-width: max-content;
+    overflow-x: scroll;
+    display: flex; 
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #999;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    max-width: max-content;
 }
 
 .from {
-  align-self: end;
-  width: fit-content;
-  font-style: italic;
-  font-weight: lighter;
+    align-self: end;
+    width: fit-content;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 .endbuffer {
-  height: 100px;
+    height: 100px;
 }
 
 /*===========================OTHERS========================*/
 
 @media only screen and (max-width: 600px) {
-  .type-text {
-    font-size: 5.5lvw;
-    animation: animated-text 2s steps(20, end) 1s 1 normal both,
-    animated-cursor 600ms linear infinite;
-  }
+    .type-text {
+        font-size: 5.5lvw;
+        animation: animated-text 2s steps(20, end) 1s 1 normal both,
+        animated-cursor 600ms linear infinite;
+    }
 
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 80lvw;}
-  }
-  
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 80lvw;}
+    }
 }
