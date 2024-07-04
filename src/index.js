@@ -13,13 +13,12 @@ import vaniaPhotos from './modules/photoAdders/vaniaPhotos';
 import shannaPhotos from './modules/photoAdders/shannaPhotos'; 
 import congPhotos from './modules/photoAdders/congPhotos'; 
 import bernicePhotos from './modules/photoAdders/bernicePhotos'; 
-import kimPhotos from './modules/photoAdders/kimPhotos'; 
+import kimPhotos from './modules/photoAdders/kimPhotos';
 import introFade from './modules/introFade';
 import hpbdAnimation from './modules/hpbdAnimation';
 import confettiEffects from './modules/confettiEffects';
 import lovedOnesAnimation from './modules/lovedOnesAnimation'; 
 import cardAnimations from './modules/cardAnimations'; 
-
 
 //reset scroll on reload
 if ('scrollRestoration' in history) {

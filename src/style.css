@@ -19,6 +19,10 @@ body {
     background-color: #000;
 }
 
+.example::-webkit-scrollbar {
+    display: none;
+  }
+
 /*======================WELCOME ELEMENT=================*/
 .intro {
     display: flex; 
@@ -282,17 +286,16 @@ body {
     justify-content: space-evenly;
     margin-top: 50px; 
     margin-bottom: 50px; 
-    opacity: 0%; 
     transition: 1s ease-in-out;
+    background: linear-gradient(225deg, #999, antiquewhite);
+    border: 0.5px solid #999; 
+    opacity: 0; 
 }
 
 .card-appear {
-    animation: 1s card-appear linear; 
-    opacity: inherit; 
-    background: linear-gradient(225deg, #999, antiquewhite);
-    border: 0.5px solid #999; 
+    opacity: 100%; 
+    animation: 1s card-appear linear;
 }
-
 @keyframes card-appear {
     0% {opacity: 0%; scale: 0;}
     25% {opacity: 0%; scale: 0;}
@@ -312,7 +315,7 @@ body {
 }
 
 .note {
-    font-size: 3lvw;
+    font-size: 1.5lvw;
 }
 
 .from {
@@ -363,9 +366,12 @@ body {
         animation: animated-text 2s steps(20, end) 1s 1 normal both,
         animated-cursor 600ms linear infinite;
     }
-
     @keyframes animated-text{
         from{width: 0;}
         to{width: 80lvw;}
+    }
+
+    .note {
+        font-size: 3lvw;
     }
 }
