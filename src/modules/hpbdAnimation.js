@@ -6,7 +6,7 @@ export default function hpbdAnimation() {
     
         const observerOptions = {
             root: null, // Use the viewport
-            rootMargin: '0px 0px -80% 0px', // Offset to trigger when the element is in the middle
+            rootMargin: '0px 0px -75% 0px', // Offset to trigger when the element is in the middle
             threshold: 0 // Trigger when any part of the element is in view
         };
         
@@ -18,7 +18,7 @@ export default function hpbdAnimation() {
                     entry.target.innerHTML = '<h2 class="text_shadows">Happy Birthday, My Dearest Kyla!</h2>\
                                             <div class="photous"></div>\
                                             <p class="from-edgar">From Edgar!</p>';
-                    area.style.animation = '0.8s appear linear';
+                    area.style.animation = '0.6s appear linear';
                     setTimeout(() => {
                         const text = document.querySelector('.text_shadows'); 
                         const photous = document.querySelector(".photous");
