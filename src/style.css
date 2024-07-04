@@ -340,16 +340,16 @@ body {
 
 .ending>span {
     text-align: center;
-    font-size: 1lvw;
+    font-size: 2lvw;
 }
 
 .ending a {
     cursor: pointer;
-    animation: move 1.2s ease-in infinite;
 }
 
 .ending a:visited {
-    color: white; 
+    background-color:#fff;
+    color:#fff;
     text-decoration: none;
 }
 
