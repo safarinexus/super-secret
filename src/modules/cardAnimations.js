@@ -4,7 +4,7 @@ export default function cardAnimations() {
     
         const observerOptions = {
           root: null, // Use the viewport
-          rootMargin: '0px 0px -75% 0px', // Offset to trigger when the element is in the middle
+          rootMargin: '0px 0px -80% 0px', // Offset to trigger when the element is in the middle
           threshold: 0// Trigger when any part of the element is in view
         };
         
