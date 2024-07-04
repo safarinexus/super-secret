@@ -31,6 +31,7 @@ body {
     padding: 0; 
     margin: 0;
     height: 100svh;
+    transition: 1.5s ease-out;
 }
 
 .intro * {
@@ -112,16 +113,17 @@ body {
     justify-content: center;
     position: relative;
     animation: 2.5s appear linear; 
-    @keyframes appear {
-        0% {
-            opacity: 0%;
-        }
-        50% {
-            opacity: 0%;
-        }
-        100% {
-            opacity: 100%;
-        }
+    transition: 1s ease-in; 
+}
+@keyframes appear {
+    0% {
+        opacity: 0%; scale: 0.7; 
+    }
+    50% {
+        opacity: 0%; scale: 0.7; 
+    }
+    100% {
+        opacity: 100%; scale: 1; 
     }
 }
 

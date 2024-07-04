@@ -59,13 +59,17 @@ addNote('kim', "happy 21st bday love!! i'm so thankful to have met you in uni an
 import kimPhotos from './modules/photoAdders/kimPhotos'; 
 kimPhotos();
 
-//confetti effects
-import confettiEffects from './modules/confettiEffects';
-confettiEffects(); 
+//scroll fade animation 
+import introFade from './modules/introFade';
+introFade(); 
 
 //hpbd animation
 import hpbdAnimation from './modules/hpbdAnimation';
 hpbdAnimation(); 
+
+//confetti effects
+import confettiEffects from './modules/confettiEffects';
+confettiEffects(); 
 
 //loved-ones text animations
 import lovedOnesAnimation from './modules/lovedOnesAnimation'; 
