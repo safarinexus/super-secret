@@ -295,7 +295,7 @@ body {
 
 .card-appear {
     opacity: 100%; 
-    animation: 1s card-appear linear;
+    animation: 0.5s card-appear linear;
 }
 @keyframes card-appear {
     0% {opacity: 0%; scale: 0;}
