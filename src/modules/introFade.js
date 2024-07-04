@@ -1,6 +1,7 @@
 export default function introFade() {
   document.addEventListener('DOMContentLoaded', function() {
     const element = document.querySelector('.intro');
+    let flag = false; 
 
     const observerOptions = {
         root: null, // Use the viewport as the root
@@ -11,8 +12,12 @@ export default function introFade() {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                console.log('reappearing');
-                entry.target.id = 'appear';
+                if (!flag) {
+                    flag = true; 
+                } else {
+                    console.log('reappearing');
+                    entry.target.id = 'appear';
+                }
             } else {
                 console.log('fade-away');
                 entry.target.id = 'start';
