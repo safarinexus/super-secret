@@ -11,7 +11,6 @@ export default function cardAnimations() {
         const observerCallback = (entries, observer) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              console.log(observer); 
               entry.target.classList.add('card-appear');
               observer.unobserve(entry.target);
             }

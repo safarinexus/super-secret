@@ -305,7 +305,7 @@ body {
     animation: 0.5s card-appear linear;
 }
 @keyframes card-appear {
-    0% {opacity: 0%; scale: 0;}
+    0% {opacity: 0%; scale: 0.8;}
     50% {opacity: 100%; scale: 1;}
     100% {opacity: 100%; scale: 1;}
 }
