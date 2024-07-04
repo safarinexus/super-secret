@@ -20,7 +20,6 @@ export default function cardAnimations() {
         
         const observer2 = new IntersectionObserver(observerCallback, observerOptions);
         cards.forEach((card) => {
-          console.log(card);
           observer2.observe(card);
         });
     }); 

@@ -63,6 +63,10 @@ kimPhotos();
 import confettiEffects from './modules/confettiEffects';
 confettiEffects(); 
 
+//hpbd animation
+import hpbdAnimation from './modules/hpbdAnimation';
+hpbdAnimation(); 
+
 //loved-ones text animations
 import lovedOnesAnimation from './modules/lovedOnesAnimation'; 
 lovedOnesAnimation();

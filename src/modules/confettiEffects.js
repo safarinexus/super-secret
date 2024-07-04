@@ -1,48 +1,6 @@
 import { confetti } from "@tsparticles/confetti";
 
 export default function confettiEffects() {
-    const text = document.querySelector('.text_shadows'); 
-    const photous = document.querySelector(".photous");
-
-    text.addEventListener("click", () => {
-        confetti({
-            particleCount: 200,
-            spread: 90,
-            origin: { x: 1, y: 0.9 },
-        });
-
-        confetti({
-            particleCount: 200,
-            spread: 90,
-            origin: { x: 0, y: 0.9 },
-        });
-
-        confetti({
-            particleCount: 200,
-            spread: 90,
-            angle: 225,
-            origin: { x: 1, y: 0 },
-        });
-
-        confetti({
-            particleCount: 200,
-            spread: 90,
-            angle: 315,
-            origin: { x: 0, y: 0 },
-        });
-    });
-
-    photous.addEventListener("click", () => {
-        confetti({
-            particleCount: 200,
-            spread: 90, 
-            origin: { x: 0.5, y: 1 },
-            shapes: ["heart"],
-            colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"], 
-            scalar: 4,
-        });
-    });
-
     document.addEventListener('DOMContentLoaded', function() {
         const target = document.querySelector('.content');
         const observerOptions = {

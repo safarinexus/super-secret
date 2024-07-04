@@ -111,6 +111,18 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    animation: 2.5s appear linear; 
+    @keyframes appear {
+        0% {
+            opacity: 0%;
+        }
+        50% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
 }
 
 .text_shadows {
@@ -261,8 +273,6 @@ body {
     height: min(auto, 400px);
     width: 80%; 
     border-radius: 20px;
-    border: 0.5px solid #999; 
-    background: linear-gradient(225deg, #999, antiquewhite);
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -270,11 +280,14 @@ body {
     margin-top: 50px; 
     margin-bottom: 50px; 
     opacity: 0%; 
+    transition: 1s ease-in-out;
 }
 
 .card-appear {
     animation: 1s card-appear linear; 
     opacity: inherit; 
+    background: linear-gradient(225deg, #999, antiquewhite);
+    border: 0.5px solid #999; 
 }
 
 @keyframes card-appear {
