@@ -5,7 +5,7 @@
 }
 
 body {
-    min-height: 100lvh;
+    min-height: 100svh;
     font-family: 'Space Mono';
     font-weight: 300;
     font-size: 1.25rem;
@@ -33,7 +33,7 @@ body {
     font-size: 0.5em;
     padding: 0; 
     margin: 0;
-    height: 100lvh;
+    height: 100svh;
 }
 
 #appear {
@@ -116,7 +116,7 @@ body {
 /*===================HAPPY BIRTHDAY ELEMENT=================*/
 .content {
     /*background: linear-gradient(45deg, #ded6d5, antiquewhite);*/
-    height: 100lvh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,7 +263,7 @@ body {
 /*=======================WISHES ELEMENT===================*/
 
 .wishes {
-    min-height: 100lvh;
+    min-height: 100svh;
     width: 100%; 
     height: auto;
     display: flex; 
@@ -333,7 +333,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100lvh; 
+    height: 100svh; 
     width: 100%; 
 }
 
