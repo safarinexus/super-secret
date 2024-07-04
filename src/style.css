@@ -311,6 +311,10 @@ body {
     max-width: max-content;
 }
 
+.note {
+    font-size: 3lvw;
+}
+
 .from {
     align-self: end;
     width: fit-content;
@@ -354,7 +358,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .type-text {
-        font-size: 2lvw;
+        font-size: 4lvw;
         animation: animated-text 2s steps(20, end) 1s 1 normal both,
         animated-cursor 600ms linear infinite;
     }
