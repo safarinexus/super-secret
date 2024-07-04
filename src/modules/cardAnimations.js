@@ -4,14 +4,14 @@ export default function cardAnimations() {
     
         const observerOptions = {
           root: null, // Use the viewport
-          rootMargin: '-30% 0px -30% 0px', // Offset to trigger when the element is in the middle
+          rootMargin: '0px 0px -80% 0px', // Offset to trigger when the element is in the middle
           threshold: 0// Trigger when any part of the element is in view
         };
         
         const observerCallback = (entries, observer) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              console.log('card appear!'); 
+              console.log(observer); 
               entry.target.classList.add('card-appear');
               observer.unobserve(entry.target);
             }
