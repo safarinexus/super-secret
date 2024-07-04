@@ -21,7 +21,7 @@ body {
 
 .example::-webkit-scrollbar {
     display: none;
-  }
+}
 
 /*======================WELCOME ELEMENT=================*/
 .intro {
@@ -33,7 +33,7 @@ body {
     font-size: 0.5em;
     padding: 0; 
     margin: 0;
-    height: 100svh;
+    height: 100lvh;
 }
 
 #appear {

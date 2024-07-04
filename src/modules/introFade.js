@@ -1,6 +1,6 @@
 export default function introFade() {
   document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('.intro');
+    const element = document.querySelector('.intro');
 
     const observerOptions = {
         root: null, // Use the viewport as the root
@@ -20,8 +20,6 @@ export default function introFade() {
         });
     }, observerOptions);
 
-    elements.forEach(element => {
-        observer.observe(element);
-    });
+    observer.observe(element);
 });
 }
