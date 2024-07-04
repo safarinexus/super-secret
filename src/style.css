@@ -293,6 +293,7 @@ body {
     border: 3px solid #fff; 
     opacity: 0; 
     color: #fff; 
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .card:hover {
@@ -339,18 +340,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100svh; 
+    height: 100lvh; 
     width: 100%; 
 }
 
 .ending>p {
-    font-size: 5lvw;
+    font-size: 5svw;
     text-align: center;
 }
 
 .ending>span {
     text-align: center;
-    font-size: 2lvw;
+    font-size: 2svw;
 }
 
 .ending a {
