@@ -41,16 +41,9 @@ addNote('zhi qian', "Happy Birthday Kyla!!🎂 It's officially 21 now BIG GURL!!
 addNote('vallerie', "HELLO KYLABONGBONG HAPPY 21st BIRTHDAY YAYYYY ❤️❤️❤️ thank you for being such a great friend and i’m so proud to see you grow in emix especially as a vp hehe PLS TAKE CARE OF YOURSELF AND STOP FALLING SICK 🤬🤬🤬 hope you know that syaxan will always here for you,, don’t be too hard on yourself okieee can’t wait to see you grow even more as a dancer huehue hopefully you’ll be my choreog next time 😆😆😆 enjoy your 21st bday and i can’t wait for our next tea sesh tgt <3 love you!!!", true);
 valleriePhotos();
 
-//si qi (one vid has prob so load here)
+//si qi
 addNote('siqi', "HAPPY 21ST MY DEAR!!!!! honestly the “meeting twice” theory is saur true bc i knew u in sn but we only got closer aft jc ori heheehhahahah so grateful u entered my life la u adorable ball of sunshine <3 although we dont meet super often, i know i can count on u hehehe n it’s alw a good time w u la mi amor~ u were an integral part of my teens n now an integral part of my adulthood n i love u!!!!!! so much!!!!!!!!!!", true); 
 siqiPhotos();
-const slider = document.querySelector('#siqi-images'); 
-import siqiVid from './assets/IMG_7344.mp4'; 
-const video = document.createElement('video');
-video.height = 240;
-video.src = siqiVid;
-video.controls = true;
-slider.appendChild(video);
 
 //vania
 addNote('vania', 'happy birthday ms kyla vp!!!!! so thankful for you and to be working with you through timeless and exco :"") continue to shake ass and stay a slaying queen in EMIX hehe sORRY IDH any meaningful photos w u kyla :-((( ur face when ryan was talking was priceless HAHHAHA', true); 

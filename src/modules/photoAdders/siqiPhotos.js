@@ -42,7 +42,6 @@ export default function siqiPhotos() {
     photo9.src = siqi9; 
     photo9.style.height = '240px'; 
     
-    
     slider.appendChild(photo2); 
     slider.appendChild(video2);
     slider.appendChild(photo4); 
