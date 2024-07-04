@@ -54,11 +54,13 @@ export default function hpbdAnimation() {
                         photous.addEventListener("click", () => {
                             confetti({
                                 particleCount: 200,
-                                spread: 90, 
-                                origin: { x: 0.5, y: 1 },
+                                spread: 180, 
+                                angle: 270,
+                                origin: { x: 0.5, y: 0 },
                                 shapes: ["heart"],
                                 colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"], 
-                                scalar: 4,
+                                scalar: 5,
+                                ticks: 125,
                             });
                         }); 
 
