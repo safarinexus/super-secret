@@ -126,8 +126,8 @@ body {
     0% {
         opacity: 0%; scale: 0.7; 
     }
-    40% {
-        opacity: 0%; scale: 0.7; 
+    80% {
+        opacity: 100%; scale: 1; 
     }
     100% {
         opacity: 100%; scale: 1; 
