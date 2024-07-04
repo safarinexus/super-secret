@@ -14,10 +14,11 @@ export default function hpbdAnimation() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     console.log('happy bday!'); 
+            
+                    entry.target.innerHTML = '<h2 class="text_shadows">Happy Birthday, My Dearest Kyla!</h2>\
+                                            <div class="photous"></div>\
+                                            <p class="from-edgar">From Edgar!</p>';
                     setTimeout(() => {
-                        entry.target.innerHTML = '<h2 class="text_shadows">Happy Birthday, My Dearest Kyla!</h2>\
-                                                <div class="photous"></div>\
-                                                <p class="from-edgar">From Edgar!</p>';
                         const text = document.querySelector('.text_shadows'); 
                         const photous = document.querySelector(".photous");
                                                 

@@ -33,7 +33,7 @@ body {
     height: 100svh;
     animation: 1s intro-appear linear;
 }
-@keyframes intro-fade {
+@keyframes intro-appear {
     0% {opacity: 0%;} 
     70% {opacity: 0%;}
     100% {opacity: 100%;}
