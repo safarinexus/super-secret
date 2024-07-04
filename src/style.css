@@ -126,8 +126,8 @@ body {
     0% {
         opacity: 0%; scale: 0.7; 
     }
-    80% {
-        opacity: 100%; scale: 1; 
+    40% {
+        opacity: 0%; scale: 0.7; 
     }
     100% {
         opacity: 100%; scale: 1; 
@@ -335,7 +335,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100lvh; 
-    width: 100lvw;
+    width: 100%; 
 }
 
 .ending>p {
