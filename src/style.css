@@ -279,7 +279,7 @@ body {
     box-sizing: border-box;
     box-shadow: 5px 5px 30px -10px antiquewhite;
     padding: 20px;
-    height: min(auto, 400px);
+    height: max(400px, auto);
     width: 80%; 
     border-radius: 20px;
     display: flex; 
@@ -288,7 +288,6 @@ body {
     justify-content: space-evenly;
     margin-top: 50px; 
     margin-bottom: 50px; 
-    transition: 1s ease-in-out;
     background: linear-gradient(225deg, #999, antiquewhite);
     border: 0.5px solid #999; 
     opacity: 0; 
@@ -296,12 +295,11 @@ body {
 
 .card-appear {
     opacity: 100%; 
-    animation: 1s card-appear linear;
+    animation: 0.5s card-appear linear;
 }
 @keyframes card-appear {
     0% {opacity: 0%; scale: 0;}
-    25% {opacity: 0%; scale: 0;}
-    100% {opacity: 100%; scale: 1;}
+    75% {opacity: 100%; scale: 1;}
 }
 
 
