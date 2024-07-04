@@ -31,7 +31,22 @@ body {
     padding: 0; 
     margin: 0;
     height: 100svh;
-    transition: 1.5s ease-out;
+    animation: 1s intro-appear linear;
+}
+@keyframes intro-fade {
+    0% {opacity: 0%;} 
+    70% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+#start {
+    animation: 1s intro-fade linear; 
+    opacity: 0; 
+}
+@keyframes intro-fade {
+    0% {opacity: 100%;} 
+    70% {opacity: 100%;}
+    100% {opacity: 0%;}
 }
 
 .intro * {
@@ -113,7 +128,6 @@ body {
     justify-content: center;
     position: relative;
     animation: 2.5s appear linear; 
-    transition: 1s ease-in; 
 }
 @keyframes appear {
     0% {

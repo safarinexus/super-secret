@@ -5,17 +5,17 @@ export default function introFade() {
     const observerOptions = {
         root: null, // Use the viewport as the root
         rootMargin: '0px',
-        threshold: 0.7 // Trigger when 10% of the element is visible
+        threshold: 0.7 // Trigger when 70% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 console.log('reappearing');
-                entry.target.style.opacity = '1';
+                entry.target.id = '';
             } else {
                 console.log('fade-away');
-                entry.target.style.opacity = '0';
+                entry.target.id = 'start';
             }
         });
     }, observerOptions);
