@@ -5,7 +5,7 @@
 }
 
 body {
-    min-height: 100svh;
+    min-height: 100lvh;
     font-family: 'Space Mono';
     font-weight: 300;
     font-size: 1.25rem;
@@ -263,7 +263,7 @@ body {
 /*=======================WISHES ELEMENT===================*/
 
 .wishes {
-    min-height: 100svh;
+    min-height: 100lvh;
     width: 100%; 
     height: auto;
     display: flex; 
@@ -275,7 +275,7 @@ body {
 .card {
     box-sizing: border-box;
     padding: 20px;
-    height: min(auto, 400px);
+    height: max(auto, 400px);
     width: 80%; 
     border-radius: 20px;
     display: flex; 
@@ -300,6 +300,7 @@ body {
 @keyframes card-appear {
     0% {opacity: 0%; scale: 0;}
     50% {opacity: 100%; scale: 1;}
+    100% {opacity: 100%; scale: 1;}
 }
 
 
