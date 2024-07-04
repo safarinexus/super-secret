@@ -34,21 +34,23 @@ body {
     padding: 0; 
     margin: 0;
     height: 100svh;
-    animation: intro-appear linear;
+}
+
+#appear {
+    animation: 0.8s intro-appear linear;
+    opacity: 1;  
 }
 @keyframes intro-appear {
     0% {opacity: 0%;} 
-    70% {opacity: 0%;}
     100% {opacity: 100%;}
 }
 
 #start {
-    animation: 1s intro-fade linear; 
+    animation: 0.3s intro-fade linear; 
     opacity: 0; 
 }
 @keyframes intro-fade {
     0% {opacity: 100%;} 
-    70% {opacity: 100%;}
     100% {opacity: 0%;}
 }
 

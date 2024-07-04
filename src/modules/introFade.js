@@ -12,7 +12,7 @@ export default function introFade() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 console.log('reappearing');
-                entry.target.id = '';
+                entry.target.id = 'appear';
             } else {
                 console.log('fade-away');
                 entry.target.id = 'start';
