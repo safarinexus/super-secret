@@ -18,6 +18,7 @@ export default function hpbdAnimation() {
                     entry.target.innerHTML = '<h2 class="text_shadows">Happy Birthday, My Dearest Kyla!</h2>\
                                             <div class="photous"></div>\
                                             <p class="from-edgar">From Edgar!</p>';
+                    area.style.animation = '0.8s appear linear';
                     setTimeout(() => {
                         const text = document.querySelector('.text_shadows'); 
                         const photous = document.querySelector(".photous");

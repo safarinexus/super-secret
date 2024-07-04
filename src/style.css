@@ -6,7 +6,7 @@
 
 body {
     min-height: 100svh;
-    font-family: 'vt323';
+    font-family: 'Space Mono';
     font-weight: 300;
     font-size: 1.25rem;
     display: flex;
@@ -25,13 +25,12 @@ body {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    font-family: 'Helvetica Neue', sans-serif;
     color: white; 
     font-size: 0.5em;
     padding: 0; 
     margin: 0;
     height: 100svh;
-    animation: 1s intro-appear linear;
+    animation: intro-appear linear;
 }
 @keyframes intro-appear {
     0% {opacity: 0%;} 
@@ -53,18 +52,8 @@ body {
     margin: 0; 
 }
 
-.focus {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-    z-index: -1000;
-}
-
 .reflective {
+    font-family: 'Helvetica Neue', sans-serif;
     position: relative; 
     bottom: 40%;
     font-style: italic; 
@@ -126,14 +115,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    animation: 2.5s appear linear; 
 }
 @keyframes appear {
     0% {
         opacity: 0%; scale: 0.7; 
     }
-    50% {
+    40% {
         opacity: 0%; scale: 0.7; 
     }
     100% {
@@ -144,10 +131,10 @@ body {
 .text_shadows {
     text-shadow: 3px 3px 0 #4a8dda, 6px 6px 0 #4cda5f,
         9px 9px #f07a6a, 12px 12px 0 #dd2727;
-    font-family: 'vt323';
+    /*font-family: 'vt323';*/
     font-weight: 400;
     text-transform: uppercase;
-    font-size: calc(2.5rem + 5vw);
+    font-size: calc(2rem + 5vw);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -233,7 +220,7 @@ body {
 
 .from-edgar {
     color: #fff;
-    font-family: 'Helvetica Neue', sans-serif;
+    /*font-family: 'Helvetica Neue', sans-serif;*/
     font-style: italic;
     font-weight: 100;
     font-size: small;
@@ -256,14 +243,14 @@ body {
     border-right: solid 5px rgba(255,255,255,.75);
     white-space: nowrap;
     overflow: hidden;    
-    font-size: 5lvw;
+    font-size: 4lvw;
     color: #c246e7;
     animation: animated-text 2s steps(20, end) 1s 1 normal both,
     animated-cursor 600ms linear infinite;
 }
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 64lvw;}
+    to{width: 78lvw;}
 }
 @keyframes animated-cursor{
     from{border-right-color: rgba(255,255,255,.75);}
@@ -331,15 +318,43 @@ body {
     font-weight: lighter;
 }
 
-.endbuffer {
-    height: 100px;
+/*===========================ENDING========================*/
+.ending {
+    color: white; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100lvh; 
+    width: 100lvw;
 }
+
+.ending>p {
+    font-size: 5lvw;
+    text-align: center;
+}
+
+.ending>span {
+    text-align: center;
+    font-size: 1lvw;
+}
+
+.ending a {
+    cursor: pointer;
+    animation: move 1.2s ease-in infinite;
+}
+
+.ending a:visited {
+    color: white; 
+    text-decoration: none;
+}
+
 
 /*===========================OTHERS========================*/
 
 @media only screen and (max-width: 600px) {
     .type-text {
-        font-size: 5.5lvw;
+        font-size: 2lvw;
         animation: animated-text 2s steps(20, end) 1s 1 normal both,
         animated-cursor 600ms linear infinite;
     }
