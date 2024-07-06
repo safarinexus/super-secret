@@ -16,6 +16,7 @@ import bernicePhotos from './modules/photoAdders/bernicePhotos';
 import kimPhotos from './modules/photoAdders/kimPhotos';
 import xinjiePhotos from './modules/photoAdders/xinjiePhotos';
 import kyliePhotos from './modules/photoAdders/kyliePhotos';
+import narenPhotos from './modules/photoAdders/narenPhotos';
 import introFade from './modules/introFade';
 import hpbdAnimation from './modules/hpbdAnimation';
 import confettiEffects from './modules/confettiEffects';
@@ -73,6 +74,10 @@ xinjiePhotos();
 //kylie 
 addNote("gailie cho", "hello gaila bong! happy 21st birthday <3 i’m super glad we managed to get closer this year and i am really thankful for our friendship! thanks for alws yappin w me and hanging out tgt 😙 hope you have an enjoyable bday and see you soon ~ hehe", true); 
 kyliePhotos();
+
+//naren 
+addNote("naren", "HAPPY 21st MISS GWORLL!!! SO GLAD TO HAVE MET YOU AND LOVE HOW OUR VIBES ARE JUST SO CRAZY AND STOOPID. THANKS FOR ALL THE SUPPORT AND ALWAYS HEARING ME OUT AND JOINING ME IN FOR ALL THE JUICY TEAA  HAHAHA. STAY FUN, CRAZY AND GORG AS YOU ALWAYS ARE. MISS HANGING OUT WITH YOU GUYSSS. CHEERS TO MORE MEMORIES WITH YALL SOON. HAVE A FANTASTIC 21 MAHN🥳🥳✨", true); 
+narenPhotos();
 
 //scroll fade animation 
 introFade(); 
