@@ -15,6 +15,7 @@ import congPhotos from './modules/photoAdders/congPhotos';
 import bernicePhotos from './modules/photoAdders/bernicePhotos'; 
 import kimPhotos from './modules/photoAdders/kimPhotos';
 import xinjiePhotos from './modules/photoAdders/xinjiePhotos';
+import kyliePhotos from './modules/photoAdders/kyliePhotos';
 import introFade from './modules/introFade';
 import hpbdAnimation from './modules/hpbdAnimation';
 import confettiEffects from './modules/confettiEffects';
@@ -68,6 +69,10 @@ kimPhotos();
 //xin jie 
 addNote("xin jie", "HARLO miss hottie sexy girlie gailabongbong HAPPY 21ST!!!!!! I'm sosososososo proud of you for growing so much the past year and I am very very happy that I got to do exco with you aJKSDFHKDLJGHl I CANT IMAGINE BEING THE ONLY SYAXAN DOING EXCO EH 😭😭😭😭 thanku for always matching my freak and nastayyy and being the baddest bitch hype man please sleep and drink water you're not a fucking cactus ok bye love you mwah💋💋💋", true); 
 xinjiePhotos();
+
+//kylie 
+addNote("gailie cho", "hello gaila bong! happy 21st birthday <3 i’m super glad we managed to get closer this year and i am really thankful for our friendship! thanks for alws yappin w me and hanging out tgt 😙 hope you have an enjoyable bday and see you soon ~ hehe", true); 
+kyliePhotos();
 
 //scroll fade animation 
 introFade(); 
