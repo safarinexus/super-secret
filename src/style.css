@@ -364,14 +364,14 @@ body.noscroll {
     border-right: solid 5px rgba(255,255,255,.75);
     white-space: nowrap;
     overflow: hidden;    
-    font-size: 4lvw;
+    font-size: 3lvw;
     color: #c246e7;
     animation: animated-text 2s steps(20, end) 1s 1 normal both,
     animated-cursor 600ms linear infinite;
 }
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 86lvw;}
+    to{width: 64lvw;}
 }
 @keyframes animated-cursor{
     from{border-right-color: rgba(255,255,255,.75);}
