@@ -300,7 +300,7 @@ body {
     gap: 1rem;
     animation: 
         scroll 
-        var(--_animation-duration, 20s) 
+        var(--_animation-duration, 80s) 
         var(--_animation-direction, forwards)
         linear 
         infinite;
@@ -312,15 +312,6 @@ body {
 .slider-track[data-direction="right"]{
     --_animation-direction: reverse;
 }
-
-.slider-track[data-speed="slow"]{
-    --_animation-duration: 120s;
-}
-
-.slider-track[data-speed="fast"]{
-    --_animation-duration: 15s;
-}
-
 .slider-track img {
     height: 32svh;
     width: auto;
