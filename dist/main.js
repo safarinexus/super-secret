@@ -404,9 +404,9 @@ eval("module.exports = __webpack_require__.p + \"bdde14d728994088dc18.jpeg\";\n\
 /*!****************************************!*\
   !*** ./src/assets/arrow-down-thin.svg ***!
   \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module) => {
 
-eval("module.exports = __webpack_require__.p + \"c72123a6c9ffb68c5006.svg\";\n\n//# sourceURL=webpack://supersecret/./src/assets/arrow-down-thin.svg?");
+eval("module.exports = \"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTcuMDMgMTMuOTJIMTEuMDNWNUwxMy4wNCA0Ljk3VjEzLjkySDE3LjAzTDEyLjAzIDE4LjkyWiIgLz48L3N2Zz4=\";\n\n//# sourceURL=webpack://supersecret/./src/assets/arrow-down-thin.svg?");
 
 /***/ }),
 

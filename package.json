@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "@tsparticles/confetti": "^3.4.0",
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "image-minimizer-webpack-plugin": "^4.0.2",
+    "imagemin": "^9.0.0"
   }
 }
