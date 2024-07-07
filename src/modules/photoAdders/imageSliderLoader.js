@@ -4,7 +4,7 @@ import image3link from '../../assets/imageSliderPhotos/IMG_3585.jpg';
 import image4link from '../../assets/imageSliderPhotos/IMG_1001.jpg';
 import image5link from '../../assets/imageSliderPhotos/IMG_3102.jpg';
 import image6link from '../../assets/imageSliderPhotos/IMG_3349.jpg';
-import image7link from '../../assets/imageSliderPhotos/IMG_4477.JPG';
+import image7link from '../../assets/imageSliderPhotos/IMG_4477.jpg';
 import image8link from '../../assets/imageSliderPhotos/IMG_4534.jpg';
 import image9link from '../../assets/imageSliderPhotos/IMG_4872.jpg';
 import image10link from '../../assets/imageSliderPhotos/IMG_4081.jpg';
