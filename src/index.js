@@ -26,6 +26,11 @@ import imageSliderLoader from './modules/photoAdders/imageSliderLoader';
 import lovedOnesAnimation from './modules/lovedOnesAnimation'; 
 import cardAnimations from './modules/cardAnimations'; 
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Add 'noscroll' class to body to disable scrolling
+    document.body.classList.add('noscroll');
+});
+
 //reset scroll on reload
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
@@ -105,3 +110,8 @@ kyliePhotos();
 //naren 
 addNote("naren", "HAPPY 21st MISS GWORLL!!! SO GLAD TO HAVE MET YOU AND LOVE HOW OUR VIBES ARE JUST SO CRAZY AND STOOPID. THANKS FOR ALL THE SUPPORT AND ALWAYS HEARING ME OUT AND JOINING ME IN FOR ALL THE JUICY TEAA  HAHAHA. STAY FUN, CRAZY AND GORG AS YOU ALWAYS ARE. MISS HANGING OUT WITH YOU GUYSSS. CHEERS TO MORE MEMORIES WITH YALL SOON. HAVE A FANTASTIC 21 MAHN🥳🥳✨", true); 
 narenPhotos();
+
+window.addEventListener('load', () => {
+    // Remove 'noscroll' class from body to enable scrolling
+    document.body.classList.remove('noscroll');
+});

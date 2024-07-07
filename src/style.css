@@ -19,6 +19,10 @@ body {
     background-color: #111;
 }
 
+body.noscroll {
+    overflow: hidden;
+}
+
 .example::-webkit-scrollbar {
     display: none;
 }
