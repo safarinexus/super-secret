@@ -21,6 +21,7 @@ import narenPhotos from './modules/photoAdders/narenPhotos';
 import introFade from './modules/introFade';
 import hpbdAnimation from './modules/hpbdAnimation';
 import confettiEffects from './modules/confettiEffects';
+import imageSliders from './modules/imageSliders'; 
 import imageSliderLoader from './modules/photoAdders/imageSliderLoader';
 import lovedOnesAnimation from './modules/lovedOnesAnimation'; 
 import cardAnimations from './modules/cardAnimations'; 
@@ -29,10 +30,27 @@ import cardAnimations from './modules/cardAnimations';
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
-
 //load image slider images 
 imageSliderLoader();
+imageSliders();
 
+
+//scroll fade animation 
+introFade(); 
+
+//hpbd animation
+hpbdAnimation(); 
+
+//confetti effects
+confettiEffects(); 
+
+//loved-ones text animations
+lovedOnesAnimation();
+
+//card animations
+cardAnimations();
+
+//adding people notes
 //mel
 addNote('mel', 'happy bday baby 😗😗 you’re living and thriving and I love that so much. keep slaying and being gorjus as always. So now that you’re 21 I can bring you to the strip clubs right 😁😁😁😁 We need to take more pics together fr… All Edgar’s fault 🙄🙄 ', true);
 melPhotos();
@@ -87,46 +105,3 @@ kyliePhotos();
 //naren 
 addNote("naren", "HAPPY 21st MISS GWORLL!!! SO GLAD TO HAVE MET YOU AND LOVE HOW OUR VIBES ARE JUST SO CRAZY AND STOOPID. THANKS FOR ALL THE SUPPORT AND ALWAYS HEARING ME OUT AND JOINING ME IN FOR ALL THE JUICY TEAA  HAHAHA. STAY FUN, CRAZY AND GORG AS YOU ALWAYS ARE. MISS HANGING OUT WITH YOU GUYSSS. CHEERS TO MORE MEMORIES WITH YALL SOON. HAVE A FANTASTIC 21 MAHN🥳🥳✨", true); 
 narenPhotos();
-
-//scroll fade animation 
-introFade(); 
-
-//hpbd animation
-hpbdAnimation(); 
-
-//confetti effects
-confettiEffects(); 
-
-//loved-ones text animations
-lovedOnesAnimation();
-
-//card animations
-cardAnimations();
-
-
-//separate function for infinite scrolls
-
-//add the function to appear and disappear on scroll here too
-
-document.addEventListener('DOMContentLoaded', () => {
-    const allsliders = document.querySelectorAll('.slider');
-
-    function addAnimation() {
-        allsliders.forEach(slider => {
-            const inner = slider.querySelector('.slider-track');
-            const slides = Array.from(inner.children);
-
-            for (let i = 0; i < 2; i++) {
-                slides.forEach((item) => {
-                    const duplicate = item.cloneNode(true);
-                    duplicate.setAttribute('aria-hidden', true);
-                    inner.appendChild(duplicate);
-                })
-            }
-        })
-    }
-
-    addAnimation();
-});
-
-  

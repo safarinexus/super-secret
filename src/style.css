@@ -93,6 +93,9 @@ body {
     position: relative;
     bottom: 30px; 
     left: 2px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
 }
 
 .scroll-circle {
@@ -275,6 +278,12 @@ body {
     font-size: 3rem;
     position: absolute;
     bottom: 55%;
+    animation: bounce2 1s ease infinite;
+}
+@keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
 }
 
 /*======================IMAGE SCROLLER ELEMENT==================*/
