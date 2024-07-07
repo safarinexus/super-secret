@@ -216,10 +216,24 @@ body {
     }
 }
 
+.my-msg {
+    color: white; 
+    width: 65%; 
+    text-align: center;
+    opacity: 0;
+}
+@keyframes msg-appear {
+    from {opacity: 0; -webkit-filter: blur(1.5rem);}
+    to {opacity: 1; -webkit-filter: blur(0);}
+}
+.my-msg-appear{
+    opacity: 1;
+}
+
 .photous {
+    margin-top: 50px;
     height: 150px; 
     width: auto;  
-    margin-top: 100px;
     content: url(./assets/circlePhoto.jpg);
     border-radius: 50%;
     z-index: 5;
@@ -237,6 +251,15 @@ body {
     animation-range-start: 0;
     animation-range-end: contain 50%; 
 }
+/*======================IMAGE SCROLLER ELEMENT==================*/
+.scroller {
+    height: 100svh; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
 
 /*======================LOVED-ONES ELEMENT==================*/
 

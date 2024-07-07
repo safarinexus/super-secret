@@ -50,7 +50,7 @@ export default function confettiEffects() {
                         scalar: 5,
                         ticks: 125,
                     });
-                }, 1500);
+                }, 1000);
                 observer.unobserve(target); // Stop observing if needed
             }
             });

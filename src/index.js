@@ -14,6 +14,7 @@ import shannaPhotos from './modules/photoAdders/shannaPhotos';
 import congPhotos from './modules/photoAdders/congPhotos'; 
 import bernicePhotos from './modules/photoAdders/bernicePhotos'; 
 import kimPhotos from './modules/photoAdders/kimPhotos';
+import zanePhotos from './modules/photoAdders/zanePhotos';
 import xinjiePhotos from './modules/photoAdders/xinjiePhotos';
 import kyliePhotos from './modules/photoAdders/kyliePhotos';
 import narenPhotos from './modules/photoAdders/narenPhotos';
@@ -66,6 +67,10 @@ bernicePhotos();
 //kim 
 addNote('kim', "happy 21st bday love!! i'm so thankful to have met you in uni and get to know you better as time passed! your presence is always so pleasant to have and thank you for always including me in plans that don't always involve my batch / friend group!! very very thankful for you <33 and you are so capable and i'm very proud of what you have achieved so far!! you are such a strong and stable gurlie and just keep doing what you have been doing ok!! i will always be here to support you / talk to you / just sit there in your presence! love u bbg", true); 
 kimPhotos();
+
+//zane 
+addNote('zane', "happiest twenty first kyla! this is the peak of your youth. it is your time to shine, dont shy away from the truth. everyday you’ve been slaying, figuratively and verbally. have an amazing birthday, and you should come work more frequently. ", true); 
+zanePhotos();
 
 //xin jie 
 addNote("xin jie", "HARLO miss hottie sexy girlie gailabongbong HAPPY 21ST!!!!!! I'm sosososososo proud of you for growing so much the past year and I am very very happy that I got to do exco with you aJKSDFHKDLJGHl I CANT IMAGINE BEING THE ONLY SYAXAN DOING EXCO EH 😭😭😭😭 thanku for always matching my freak and nastayyy and being the baddest bitch hype man please sleep and drink water you're not a fucking cactus ok bye love you mwah💋💋💋", true); 
