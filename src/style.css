@@ -275,7 +275,7 @@ body {
 .buffer>p {
     color: white; 
     text-align: center;
-    font-size: 3rem;
+    font-size: calc(1rem + 5vw);
     position: absolute;
     bottom: 55%;
     animation: bounce2 1s ease infinite;
