@@ -29,7 +29,6 @@ import image28link from '../../assets/imageSliderPhotos/IMG_4841.jpg';
 import image29link from '../../assets/imageSliderPhotos/IMG_2393.jpg';
 import image30link from '../../assets/imageSliderPhotos/IMG_7501.jpg';
 
-
 export default function imageSliderLoader() {
     const image1 = document.querySelector('#image1'); 
     const image2 = document.querySelector('#image2'); 
