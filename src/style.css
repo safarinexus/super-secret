@@ -276,8 +276,6 @@ body {
     color: white; 
     text-align: center;
     font-size: calc(1rem + 5vw);
-    position: absolute;
-    bottom: 55%;
     animation: bounce2 1s ease infinite;
 }
 @keyframes bounce2 {
