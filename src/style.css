@@ -405,4 +405,8 @@ body {
     .note {
         font-size: 3lvw;
     }
+
+    .my-msg {
+        font-size: 2svw;
+    }
 }
