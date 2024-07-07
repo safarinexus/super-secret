@@ -251,16 +251,91 @@ body {
     animation-range-start: 0;
     animation-range-end: contain 50%; 
 }
+/*==========================BUFFER ELEMENT=======================*/
+.buffer {
+    height: 50svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.buffer>p {
+    color: white; 
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 60%;
+}
+
 /*======================IMAGE SCROLLER ELEMENT==================*/
-.scroller {
+
+.images {
     height: 100svh; 
     width: 100%; 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.slider {
+    height: 33.5svh;
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+}
 
+.slider-track {
+    flex-wrap: nowrap;
+    display: flex;
+    align-content: center;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
+    box-sizing: border-box;
+    padding: 1rem; 
+    gap: 1rem;
+    animation: 
+        scroll 
+        var(--_animation-duration, 20s) 
+        var(--_animation-direction, forwards)
+        linear 
+        infinite;
+}
+@keyframes scroll {
+    to{transform: translate(calc(-50% - 0.5rem));}
+}
+
+.slider-track[data-direction="right"]{
+    --_animation-direction: reverse;
+}
+
+.slider-track[data-speed="slow"]{
+    --_animation-duration: 120s;
+}
+
+.slider-track[data-speed="fast"]{
+    --_animation-duration: 15s;
+}
+
+.slider-track img {
+    height: 32svh;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    /*filter: grayscale(75%);*/
+}
+
+#slidermid {
+    -webkit-mask: linear-gradient(90deg, white 75%, transparent);
+}
+
+#slidertop, #sliderbot {
+    -webkit-mask: linear-gradient(90deg, transparent, white 25%);
+}
 /*======================LOVED-ONES ELEMENT==================*/
 
 .loved-ones {
@@ -281,7 +356,7 @@ body {
 }
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 78lvw;}
+    to{width: 86lvw;}
 }
 @keyframes animated-cursor{
     from{border-right-color: rgba(255,255,255,.75);}
@@ -399,7 +474,7 @@ body {
     }
     @keyframes animated-text{
         from{width: 0;}
-        to{width: 80lvw;}
+        to{width: 85lvw;}
     }
 
     .note {

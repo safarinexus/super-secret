@@ -11,7 +11,7 @@ export default function lovedOnesAnimation() {
         const observerCallback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                entry.target.innerHTML = '<h1 class="type-text">And from the ones that love you!</h1>';
+                entry.target.innerHTML = '<h1 class="type-text">And from more people that love you!</h1>';
                 observer.unobserve(entry.target);
                 }
             });
