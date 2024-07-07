@@ -122,10 +122,10 @@ body {
 .content {
     /*background: linear-gradient(45deg, #ded6d5, antiquewhite);*/
     height: 100svh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 45% 20% 35%;
+    justify-items: center;
 }
 @keyframes appear {
     0% {
@@ -137,6 +137,7 @@ body {
 }
 
 .text_shadows {
+    align-self: end;
     text-shadow: 3px 3px 0 #4a8dda, 6px 6px 0 #4cda5f,
         9px 9px #f07a6a, 12px 12px 0 #dd2727;
     /*font-family: 'vt323';*/
@@ -221,6 +222,7 @@ body {
     width: 65%; 
     text-align: center;
     opacity: 0;
+    align-self: center;
 }
 @keyframes msg-appear {
     from {opacity: 0; -webkit-filter: blur(1.5rem);}
@@ -230,8 +232,15 @@ body {
     opacity: 1;
 }
 
+.me-container{ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
 .photous {
-    margin-top: 50px;
+    padding: 10px;
     height: 150px; 
     width: auto;  
     content: url(./assets/circlePhoto.jpg);
@@ -265,7 +274,7 @@ body {
     text-align: center;
     font-size: 3rem;
     position: absolute;
-    bottom: 60%;
+    bottom: 55%;
 }
 
 /*======================IMAGE SCROLLER ELEMENT==================*/
@@ -312,8 +321,12 @@ body {
 .slider-track[data-direction="right"]{
     --_animation-direction: reverse;
 }
+.slider-track[data-speed="faster"]{
+    --_animation-duration: 50s;
+}
+
 .slider-track img {
-    height: 32svh;
+    height: 30svh;
     width: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -457,7 +470,7 @@ body {
 
 /*===========================OTHERS========================*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .type-text {
         font-size: 4lvw;
         animation: animated-text 2s steps(20, end) 1s 1 normal both,
@@ -465,7 +478,7 @@ body {
     }
     @keyframes animated-text{
         from{width: 0;}
-        to{width: 85lvw;}
+        to{width: 87lvw;}
     }
 
     .note {

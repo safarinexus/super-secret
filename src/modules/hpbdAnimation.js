@@ -17,8 +17,10 @@ export default function hpbdAnimation() {
             
                     entry.target.innerHTML = '<h2 class="text_shadows">Happy Birthday, My Dearest Kyla!</h2>\
                                             <div class="my-msg">To the strongest, sweetest, cutest, prettiest, bestest and most wonderful girl. Thank you for standing by me and for all the beautiful moments before and in front of us. Thank you for everything that you have done and everything that you are.</div>\
+                                            <div class="me-container">\
                                             <div class="photous"></div>\
-                                            <p class="from-edgar">From Edgar!</p>';
+                                            <p class="from-edgar">From Edgar!</p>\
+                                            </div>';
                     area.style.animation = '0.5s appear linear';
                     setTimeout(() => {
                         document.querySelector('.my-msg').classList.add('my-msg-appear');
