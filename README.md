@@ -1,2 +1,2 @@
-# superSecret
+# super-secret
 for a special someone.
